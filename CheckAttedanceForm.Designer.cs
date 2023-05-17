@@ -50,16 +50,16 @@
             this.lb_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.imageBox1 = new Emgu.CV.UI.ImageBox();
             this.bt_Stastictis = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.listBox_Active = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.imageBox1 = new Emgu.CV.UI.ImageBox();
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,12 +76,12 @@
             // 
             // bt_CheckAttendace
             // 
-            this.bt_CheckAttendace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_CheckAttendace.BackColor = System.Drawing.Color.LimeGreen;
             this.bt_CheckAttendace.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckAttendace.ForeColor = System.Drawing.Color.White;
-            this.bt_CheckAttendace.Location = new System.Drawing.Point(252, 120);
+            this.bt_CheckAttendace.Location = new System.Drawing.Point(252, 145);
             this.bt_CheckAttendace.Name = "bt_CheckAttendace";
-            this.bt_CheckAttendace.Size = new System.Drawing.Size(124, 86);
+            this.bt_CheckAttendace.Size = new System.Drawing.Size(124, 61);
             this.bt_CheckAttendace.TabIndex = 16;
             this.bt_CheckAttendace.Text = "Điểm Danh";
             this.bt_CheckAttendace.UseVisualStyleBackColor = false;
@@ -89,7 +89,7 @@
             // 
             // bt_Reset
             // 
-            this.bt_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_Reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bt_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Reset.ForeColor = System.Drawing.Color.White;
             this.bt_Reset.Location = new System.Drawing.Point(400, 20);
@@ -102,7 +102,7 @@
             // 
             // bt_Start
             // 
-            this.bt_Start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Start.BackColor = System.Drawing.Color.LimeGreen;
             this.bt_Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Start.ForeColor = System.Drawing.Color.White;
             this.bt_Start.Location = new System.Drawing.Point(252, 21);
@@ -115,9 +115,10 @@
             // 
             // bt_Add
             // 
-            this.bt_Add.Location = new System.Drawing.Point(419, 85);
+            this.bt_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Add.Location = new System.Drawing.Point(428, 110);
             this.bt_Add.Name = "bt_Add";
-            this.bt_Add.Size = new System.Drawing.Size(134, 26);
+            this.bt_Add.Size = new System.Drawing.Size(134, 40);
             this.bt_Add.TabIndex = 13;
             this.bt_Add.Text = "Add";
             this.bt_Add.UseVisualStyleBackColor = true;
@@ -125,9 +126,10 @@
             // 
             // txb_ID
             // 
-            this.txb_ID.Location = new System.Drawing.Point(256, 89);
+            this.txb_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_ID.Location = new System.Drawing.Point(265, 120);
             this.txb_ID.Name = "txb_ID";
-            this.txb_ID.Size = new System.Drawing.Size(127, 22);
+            this.txb_ID.Size = new System.Drawing.Size(127, 28);
             this.txb_ID.TabIndex = 12;
             // 
             // groupBox1
@@ -145,9 +147,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(67, 442);
+            this.groupBox1.Location = new System.Drawing.Point(67, 420);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(594, 196);
+            this.groupBox1.Size = new System.Drawing.Size(594, 186);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm Dữ Liệu";
@@ -155,93 +157,102 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(285, 69);
+            this.label7.Location = new System.Drawing.Point(294, 95);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 17);
+            this.label7.Size = new System.Drawing.Size(60, 22);
             this.label7.TabIndex = 11;
             this.label7.Text = "MSSV";
             // 
             // txb_YearBorn
             // 
-            this.txb_YearBorn.Location = new System.Drawing.Point(419, 32);
+            this.txb_YearBorn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_YearBorn.Location = new System.Drawing.Point(428, 45);
             this.txb_YearBorn.Name = "txb_YearBorn";
-            this.txb_YearBorn.Size = new System.Drawing.Size(134, 22);
+            this.txb_YearBorn.Size = new System.Drawing.Size(134, 28);
             this.txb_YearBorn.TabIndex = 10;
             // 
             // txb_Name
             // 
-            this.txb_Name.Location = new System.Drawing.Point(256, 32);
+            this.txb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Name.Location = new System.Drawing.Point(265, 45);
             this.txb_Name.Name = "txb_Name";
-            this.txb_Name.Size = new System.Drawing.Size(127, 22);
+            this.txb_Name.Size = new System.Drawing.Size(127, 28);
             this.txb_Name.TabIndex = 9;
             // 
             // lb_NumberRegcon
             // 
             this.lb_NumberRegcon.AutoSize = true;
+            this.lb_NumberRegcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_NumberRegcon.ForeColor = System.Drawing.Color.Red;
-            this.lb_NumberRegcon.Location = new System.Drawing.Point(15, 131);
+            this.lb_NumberRegcon.Location = new System.Drawing.Point(24, 151);
             this.lb_NumberRegcon.Name = "lb_NumberRegcon";
-            this.lb_NumberRegcon.Size = new System.Drawing.Size(17, 17);
+            this.lb_NumberRegcon.Size = new System.Drawing.Size(20, 22);
             this.lb_NumberRegcon.TabIndex = 8;
             this.lb_NumberRegcon.Text = "0";
             // 
             // lb_RegconPerSon
             // 
             this.lb_RegconPerSon.AutoSize = true;
+            this.lb_RegconPerSon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_RegconPerSon.ForeColor = System.Drawing.Color.Red;
-            this.lb_RegconPerSon.Location = new System.Drawing.Point(15, 69);
+            this.lb_RegconPerSon.Location = new System.Drawing.Point(24, 73);
             this.lb_RegconPerSon.Name = "lb_RegconPerSon";
-            this.lb_RegconPerSon.Size = new System.Drawing.Size(63, 17);
+            this.lb_RegconPerSon.Size = new System.Drawing.Size(72, 22);
             this.lb_RegconPerSon.TabIndex = 7;
             this.lb_RegconPerSon.Text = "Nobody";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 94);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(24, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 17);
+            this.label4.Size = new System.Drawing.Size(204, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Số người phát hiện được";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 32);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(24, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 17);
+            this.label3.Size = new System.Drawing.Size(175, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tên người nhận diện";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(466, 0);
+            this.label2.Location = new System.Drawing.Point(475, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
+            this.label2.Size = new System.Drawing.Size(85, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Năm sinh";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(285, 0);
+            this.label1.Location = new System.Drawing.Point(294, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.Size = new System.Drawing.Size(42, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tên";
             // 
             // bt_Stop
             // 
-            this.bt_Stop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bt_Stop.BackColor = System.Drawing.Color.Red;
             this.bt_Stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Stop.ForeColor = System.Drawing.Color.White;
-            this.bt_Stop.Location = new System.Drawing.Point(400, 120);
+            this.bt_Stop.Location = new System.Drawing.Point(400, 145);
             this.bt_Stop.Name = "bt_Stop";
-            this.bt_Stop.Size = new System.Drawing.Size(124, 86);
+            this.bt_Stop.Size = new System.Drawing.Size(124, 61);
             this.bt_Stop.TabIndex = 17;
             this.bt_Stop.Text = "Dừng";
             this.bt_Stop.UseVisualStyleBackColor = false;
@@ -278,12 +289,20 @@
             this.groupBox2.Controls.Add(this.bt_CheckAttendace);
             this.groupBox2.Controls.Add(this.bt_Reset);
             this.groupBox2.Controls.Add(this.bt_Start);
-            this.groupBox2.Location = new System.Drawing.Point(702, 38);
+            this.groupBox2.Location = new System.Drawing.Point(702, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(588, 600);
+            this.groupBox2.Size = new System.Drawing.Size(588, 594);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bảng Thông Tin";
+            // 
+            // imageBox1
+            // 
+            this.imageBox1.Location = new System.Drawing.Point(26, 21);
+            this.imageBox1.Name = "imageBox1";
+            this.imageBox1.Size = new System.Drawing.Size(220, 185);
+            this.imageBox1.TabIndex = 33;
+            this.imageBox1.TabStop = false;
             // 
             // bt_Stastictis
             // 
@@ -322,27 +341,19 @@
             this.groupBox3.Controls.Add(this.lb_Date);
             this.groupBox3.Controls.Add(this.lb_time);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(91, 473);
+            this.groupBox3.Location = new System.Drawing.Point(61, 445);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(306, 95);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thời Gian";
             // 
-            // imageBox1
-            // 
-            this.imageBox1.Location = new System.Drawing.Point(26, 21);
-            this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(220, 185);
-            this.imageBox1.TabIndex = 33;
-            this.imageBox1.TabStop = false;
-            // 
             // imageBoxFrameGrabber
             // 
             this.imageBoxFrameGrabber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(85, 38);
+            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(67, 12);
             this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
-            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(576, 380);
+            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(594, 380);
             this.imageBoxFrameGrabber.TabIndex = 11;
             this.imageBoxFrameGrabber.TabStop = false;
             // 
@@ -363,9 +374,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).EndInit();
             this.ResumeLayout(false);
 

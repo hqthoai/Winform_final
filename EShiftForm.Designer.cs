@@ -51,7 +51,7 @@ namespace MultiFaceRec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources.a4a5cbaabf730f310a30c6c9965de581;
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._8;
             this.ClientSize = new System.Drawing.Size(1165, 564);
             this.Controls.Add(this.dataGridView1);
             this.Name = "EShiftForm";

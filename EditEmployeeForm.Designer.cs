@@ -51,16 +51,19 @@ namespace MultiFaceRec
             // lb_Email
             // 
             this.lb_Email.AutoSize = true;
-            this.lb_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Email.Location = new System.Drawing.Point(79, 109);
+            this.lb_Email.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Email.Location = new System.Drawing.Point(134, 163);
             this.lb_Email.Name = "lb_Email";
-            this.lb_Email.Size = new System.Drawing.Size(68, 20);
+            this.lb_Email.Size = new System.Drawing.Size(71, 25);
             this.lb_Email.TabIndex = 86;
             this.lb_Email.Text = "Email :";
             // 
             // tb_Address
             // 
-            this.tb_Address.Location = new System.Drawing.Point(171, 158);
+            this.tb_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Address.Location = new System.Drawing.Point(226, 212);
             this.tb_Address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Address.Multiline = true;
             this.tb_Address.Name = "tb_Address";
@@ -69,73 +72,85 @@ namespace MultiFaceRec
             // 
             // tb_Phone
             // 
-            this.tb_Phone.Location = new System.Drawing.Point(168, 56);
+            this.tb_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Phone.Location = new System.Drawing.Point(223, 110);
             this.tb_Phone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Phone.Name = "tb_Phone";
-            this.tb_Phone.Size = new System.Drawing.Size(200, 22);
+            this.tb_Phone.Size = new System.Drawing.Size(200, 30);
             this.tb_Phone.TabIndex = 84;
             // 
             // tb_Email
             // 
-            this.tb_Email.Location = new System.Drawing.Point(168, 109);
+            this.tb_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Email.Location = new System.Drawing.Point(223, 163);
             this.tb_Email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Size = new System.Drawing.Size(200, 22);
+            this.tb_Email.Size = new System.Drawing.Size(200, 30);
             this.tb_Email.TabIndex = 83;
             // 
             // lb_Address
             // 
             this.lb_Address.AutoSize = true;
-            this.lb_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Address.Location = new System.Drawing.Point(63, 168);
+            this.lb_Address.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Address.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Address.Location = new System.Drawing.Point(118, 222);
             this.lb_Address.Name = "lb_Address";
-            this.lb_Address.Size = new System.Drawing.Size(84, 20);
+            this.lb_Address.Size = new System.Drawing.Size(91, 25);
             this.lb_Address.TabIndex = 82;
             this.lb_Address.Text = "Address:";
             // 
             // lb_Phone
             // 
             this.lb_Phone.AutoSize = true;
-            this.lb_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Phone.Location = new System.Drawing.Point(80, 56);
+            this.lb_Phone.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Phone.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Phone.Location = new System.Drawing.Point(135, 110);
             this.lb_Phone.Name = "lb_Phone";
-            this.lb_Phone.Size = new System.Drawing.Size(67, 20);
+            this.lb_Phone.Size = new System.Drawing.Size(75, 25);
             this.lb_Phone.TabIndex = 81;
             this.lb_Phone.Text = "Phone:";
             // 
             // tb_Password
             // 
-            this.tb_Password.Location = new System.Drawing.Point(171, 274);
+            this.tb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Password.Location = new System.Drawing.Point(223, 359);
             this.tb_Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Password.Name = "tb_Password";
-            this.tb_Password.Size = new System.Drawing.Size(200, 22);
+            this.tb_Password.Size = new System.Drawing.Size(200, 30);
             this.tb_Password.TabIndex = 92;
             // 
             // tb_UserName
             // 
-            this.tb_UserName.Location = new System.Drawing.Point(171, 234);
+            this.tb_UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserName.Location = new System.Drawing.Point(226, 288);
             this.tb_UserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_UserName.Name = "tb_UserName";
-            this.tb_UserName.Size = new System.Drawing.Size(200, 22);
+            this.tb_UserName.Size = new System.Drawing.Size(200, 30);
             this.tb_UserName.TabIndex = 91;
             // 
             // lb_UserName
             // 
             this.lb_UserName.AutoSize = true;
-            this.lb_UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_UserName.Location = new System.Drawing.Point(43, 236);
+            this.lb_UserName.BackColor = System.Drawing.Color.Transparent;
+            this.lb_UserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_UserName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_UserName.Location = new System.Drawing.Point(98, 290);
             this.lb_UserName.Name = "lb_UserName";
-            this.lb_UserName.Size = new System.Drawing.Size(106, 20);
+            this.lb_UserName.Size = new System.Drawing.Size(113, 25);
             this.lb_UserName.TabIndex = 89;
             this.lb_UserName.Text = "User name:";
             // 
             // lb_Password
             // 
             this.lb_Password.AutoSize = true;
-            this.lb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Password.Location = new System.Drawing.Point(44, 274);
+            this.lb_Password.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Password.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Password.Location = new System.Drawing.Point(96, 359);
             this.lb_Password.Name = "lb_Password";
-            this.lb_Password.Size = new System.Drawing.Size(103, 20);
+            this.lb_Password.Size = new System.Drawing.Size(109, 25);
             this.lb_Password.TabIndex = 90;
             this.lb_Password.Text = "Password :";
             // 
@@ -143,10 +158,10 @@ namespace MultiFaceRec
             // 
             this.pb_PictureImage.BackColor = System.Drawing.Color.Gray;
             this.pb_PictureImage.Cursor = System.Windows.Forms.Cursors.No;
-            this.pb_PictureImage.Location = new System.Drawing.Point(564, 56);
+            this.pb_PictureImage.Location = new System.Drawing.Point(524, 65);
             this.pb_PictureImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_PictureImage.Name = "pb_PictureImage";
-            this.pb_PictureImage.Size = new System.Drawing.Size(285, 240);
+            this.pb_PictureImage.Size = new System.Drawing.Size(390, 324);
             this.pb_PictureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_PictureImage.TabIndex = 88;
             this.pb_PictureImage.TabStop = false;
@@ -156,10 +171,10 @@ namespace MultiFaceRec
             this.bt_UploadImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_UploadImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_UploadImage.ForeColor = System.Drawing.Color.White;
-            this.bt_UploadImage.Location = new System.Drawing.Point(642, 360);
+            this.bt_UploadImage.Location = new System.Drawing.Point(663, 393);
             this.bt_UploadImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_UploadImage.Name = "bt_UploadImage";
-            this.bt_UploadImage.Size = new System.Drawing.Size(110, 57);
+            this.bt_UploadImage.Size = new System.Drawing.Size(114, 47);
             this.bt_UploadImage.TabIndex = 93;
             this.bt_UploadImage.Text = "Upload ";
             this.bt_UploadImage.UseVisualStyleBackColor = false;
@@ -169,7 +184,7 @@ namespace MultiFaceRec
             this.bt_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Cancel.ForeColor = System.Drawing.Color.White;
-            this.bt_Cancel.Location = new System.Drawing.Point(407, 363);
+            this.bt_Cancel.Location = new System.Drawing.Point(315, 443);
             this.bt_Cancel.Name = "bt_Cancel";
             this.bt_Cancel.Size = new System.Drawing.Size(111, 57);
             this.bt_Cancel.TabIndex = 95;
@@ -181,7 +196,7 @@ namespace MultiFaceRec
             this.bt_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit.ForeColor = System.Drawing.Color.MintCream;
-            this.bt_Edit.Location = new System.Drawing.Point(205, 363);
+            this.bt_Edit.Location = new System.Drawing.Point(99, 443);
             this.bt_Edit.Name = "bt_Edit";
             this.bt_Edit.Size = new System.Drawing.Size(110, 57);
             this.bt_Edit.TabIndex = 94;
@@ -190,19 +205,22 @@ namespace MultiFaceRec
             // 
             // tb_ID
             // 
-            this.tb_ID.Location = new System.Drawing.Point(168, 11);
+            this.tb_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_ID.Location = new System.Drawing.Point(223, 65);
             this.tb_ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_ID.Name = "tb_ID";
-            this.tb_ID.Size = new System.Drawing.Size(200, 22);
+            this.tb_ID.Size = new System.Drawing.Size(200, 30);
             this.tb_ID.TabIndex = 97;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 11);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(135, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 20);
+            this.label1.Size = new System.Drawing.Size(44, 25);
             this.label1.TabIndex = 96;
             this.label1.Text = "EID";
             // 
@@ -210,8 +228,9 @@ namespace MultiFaceRec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._650aff3051a4442a755b65c49173210f;
-            this.ClientSize = new System.Drawing.Size(1128, 696);
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1022, 597);
             this.Controls.Add(this.tb_ID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_Cancel);

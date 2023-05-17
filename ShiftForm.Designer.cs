@@ -40,7 +40,7 @@ namespace MultiFaceRec
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(589, 33);
+            this.button1.Location = new System.Drawing.Point(537, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 37);
             this.button1.TabIndex = 1;
@@ -54,16 +54,16 @@ namespace MultiFaceRec
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(72, 89);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 76);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1208, 669);
+            this.dataGridView1.Size = new System.Drawing.Size(1131, 570);
             this.dataGridView1.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1161, 33);
+            this.textBox1.Location = new System.Drawing.Point(1087, 33);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 3;
@@ -73,8 +73,8 @@ namespace MultiFaceRec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._48bc45ff496120273edb97a4089d2115;
-            this.ClientSize = new System.Drawing.Size(1338, 797);
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources.ef6d3d0e42b7711fff4b65123f21eaa3;
+            this.ClientSize = new System.Drawing.Size(1225, 676);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);

@@ -122,7 +122,7 @@ namespace MultiFaceRec
             this.buttonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonSearch.Font = new System.Drawing.Font("Perpetua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.ForeColor = System.Drawing.Color.White;
-            this.buttonSearch.Location = new System.Drawing.Point(1122, 10);
+            this.buttonSearch.Location = new System.Drawing.Point(1118, 41);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(119, 45);
@@ -143,19 +143,21 @@ namespace MultiFaceRec
             // 
             // tb_Search
             // 
-            this.tb_Search.Location = new System.Drawing.Point(796, 24);
+            this.tb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Search.Location = new System.Drawing.Point(744, 50);
             this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Size = new System.Drawing.Size(308, 22);
+            this.tb_Search.Size = new System.Drawing.Size(308, 30);
             this.tb_Search.TabIndex = 0;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(547, 26);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(489, 55);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(215, 20);
+            this.label9.Size = new System.Drawing.Size(249, 25);
             this.label9.TabIndex = 89;
             this.label9.Text = "Search Fname, Lname : ";
             // 
@@ -168,7 +170,7 @@ namespace MultiFaceRec
             this.groupBox2.Controls.Add(this.bt_Edit);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox2.Location = new System.Drawing.Point(661, 563);
+            this.groupBox2.Location = new System.Drawing.Point(509, 578);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(494, 143);
             this.groupBox2.TabIndex = 90;
@@ -250,9 +252,9 @@ namespace MultiFaceRec
             this.lb_Total.AutoSize = true;
             this.lb_Total.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Total.ForeColor = System.Drawing.Color.Crimson;
-            this.lb_Total.Location = new System.Drawing.Point(1603, 533);
+            this.lb_Total.Location = new System.Drawing.Point(1356, 527);
             this.lb_Total.Name = "lb_Total";
-            this.lb_Total.Size = new System.Drawing.Size(88, 31);
+            this.lb_Total.Size = new System.Drawing.Size(83, 29);
             this.lb_Total.TabIndex = 82;
             this.lb_Total.Text = "Total:";
             // 
@@ -263,9 +265,9 @@ namespace MultiFaceRec
             this.groupBox3.Controls.Add(this.bt_Manager);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
-            this.groupBox3.Location = new System.Drawing.Point(1293, 580);
+            this.groupBox3.Location = new System.Drawing.Point(1009, 578);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(448, 128);
+            this.groupBox3.Size = new System.Drawing.Size(430, 143);
             this.groupBox3.TabIndex = 91;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Employee Type";
@@ -275,7 +277,7 @@ namespace MultiFaceRec
             this.bt_Labourer.BackColor = System.Drawing.Color.MintCream;
             this.bt_Labourer.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Labourer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Labourer.Location = new System.Drawing.Point(306, 57);
+            this.bt_Labourer.Location = new System.Drawing.Point(298, 79);
             this.bt_Labourer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Labourer.Name = "bt_Labourer";
             this.bt_Labourer.Size = new System.Drawing.Size(126, 41);
@@ -289,7 +291,7 @@ namespace MultiFaceRec
             this.bt_Receptionist.BackColor = System.Drawing.Color.MintCream;
             this.bt_Receptionist.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Receptionist.ForeColor = System.Drawing.Color.Blue;
-            this.bt_Receptionist.Location = new System.Drawing.Point(156, 57);
+            this.bt_Receptionist.Location = new System.Drawing.Point(143, 79);
             this.bt_Receptionist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Receptionist.Name = "bt_Receptionist";
             this.bt_Receptionist.Size = new System.Drawing.Size(144, 41);
@@ -303,7 +305,7 @@ namespace MultiFaceRec
             this.bt_Manager.BackColor = System.Drawing.Color.MintCream;
             this.bt_Manager.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Manager.ForeColor = System.Drawing.Color.Red;
-            this.bt_Manager.Location = new System.Drawing.Point(25, 57);
+            this.bt_Manager.Location = new System.Drawing.Point(6, 79);
             this.bt_Manager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Manager.Name = "bt_Manager";
             this.bt_Manager.Size = new System.Drawing.Size(114, 41);
@@ -320,9 +322,9 @@ namespace MultiFaceRec
             this.groupBox4.Controls.Add(this.lb_Password);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.Lime;
-            this.groupBox4.Location = new System.Drawing.Point(27, 594);
+            this.groupBox4.Location = new System.Drawing.Point(8, 595);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(395, 126);
+            this.groupBox4.Size = new System.Drawing.Size(456, 126);
             this.groupBox4.TabIndex = 93;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Employee Account";
@@ -416,10 +418,10 @@ namespace MultiFaceRec
             // lb_EID
             // 
             this.lb_EID.AutoSize = true;
-            this.lb_EID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_EID.BackColor = System.Drawing.Color.Transparent;
             this.lb_EID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_EID.ForeColor = System.Drawing.Color.Black;
-            this.lb_EID.Location = new System.Drawing.Point(94, 39);
+            this.lb_EID.Location = new System.Drawing.Point(94, 49);
             this.lb_EID.Name = "lb_EID";
             this.lb_EID.Size = new System.Drawing.Size(46, 20);
             this.lb_EID.TabIndex = 112;
@@ -437,7 +439,7 @@ namespace MultiFaceRec
             // lb_Email
             // 
             this.lb_Email.AutoSize = true;
-            this.lb_Email.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Email.BackColor = System.Drawing.Color.Transparent;
             this.lb_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Email.ForeColor = System.Drawing.Color.Black;
             this.lb_Email.Location = new System.Drawing.Point(65, 283);
@@ -449,7 +451,7 @@ namespace MultiFaceRec
             // lb_RoleID
             // 
             this.lb_RoleID.AutoSize = true;
-            this.lb_RoleID.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_RoleID.BackColor = System.Drawing.Color.Transparent;
             this.lb_RoleID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_RoleID.ForeColor = System.Drawing.Color.Black;
             this.lb_RoleID.Location = new System.Drawing.Point(80, 389);
@@ -517,10 +519,10 @@ namespace MultiFaceRec
             // 
             this.pb_PictureImage.BackColor = System.Drawing.Color.IndianRed;
             this.pb_PictureImage.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pb_PictureImage.Location = new System.Drawing.Point(164, 418);
+            this.pb_PictureImage.Location = new System.Drawing.Point(164, 436);
             this.pb_PictureImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb_PictureImage.Name = "pb_PictureImage";
-            this.pb_PictureImage.Size = new System.Drawing.Size(208, 118);
+            this.pb_PictureImage.Size = new System.Drawing.Size(208, 100);
             this.pb_PictureImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_PictureImage.TabIndex = 106;
             this.pb_PictureImage.TabStop = false;
@@ -585,7 +587,7 @@ namespace MultiFaceRec
             // lb_Picture
             // 
             this.lb_Picture.AutoSize = true;
-            this.lb_Picture.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Picture.BackColor = System.Drawing.Color.Transparent;
             this.lb_Picture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Picture.ForeColor = System.Drawing.Color.Black;
             this.lb_Picture.Location = new System.Drawing.Point(58, 449);
@@ -597,7 +599,7 @@ namespace MultiFaceRec
             // lb_Address
             // 
             this.lb_Address.AutoSize = true;
-            this.lb_Address.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Address.BackColor = System.Drawing.Color.Transparent;
             this.lb_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Address.ForeColor = System.Drawing.Color.Black;
             this.lb_Address.Location = new System.Drawing.Point(49, 334);
@@ -609,7 +611,7 @@ namespace MultiFaceRec
             // lb_Phone
             // 
             this.lb_Phone.AutoSize = true;
-            this.lb_Phone.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Phone.BackColor = System.Drawing.Color.Transparent;
             this.lb_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Phone.ForeColor = System.Drawing.Color.Black;
             this.lb_Phone.Location = new System.Drawing.Point(66, 248);
@@ -621,7 +623,7 @@ namespace MultiFaceRec
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelGender.BackColor = System.Drawing.Color.Transparent;
             this.labelGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGender.ForeColor = System.Drawing.Color.Black;
             this.labelGender.Location = new System.Drawing.Point(57, 194);
@@ -633,7 +635,7 @@ namespace MultiFaceRec
             // lb_Birthday
             // 
             this.lb_Birthday.AutoSize = true;
-            this.lb_Birthday.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Birthday.BackColor = System.Drawing.Color.Transparent;
             this.lb_Birthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Birthday.ForeColor = System.Drawing.Color.Black;
             this.lb_Birthday.Location = new System.Drawing.Point(37, 146);
@@ -645,7 +647,7 @@ namespace MultiFaceRec
             // lb_LastName
             // 
             this.lb_LastName.AutoSize = true;
-            this.lb_LastName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_LastName.BackColor = System.Drawing.Color.Transparent;
             this.lb_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_LastName.ForeColor = System.Drawing.Color.Black;
             this.lb_LastName.Location = new System.Drawing.Point(34, 111);
@@ -657,7 +659,7 @@ namespace MultiFaceRec
             // lb_FirstName
             // 
             this.lb_FirstName.AutoSize = true;
-            this.lb_FirstName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_FirstName.BackColor = System.Drawing.Color.Transparent;
             this.lb_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_FirstName.ForeColor = System.Drawing.Color.Black;
             this.lb_FirstName.Location = new System.Drawing.Point(33, 72);
@@ -771,23 +773,24 @@ namespace MultiFaceRec
             this.passwordDataGridViewTextBoxColumn,
             this.picDataGridViewImageColumn});
             this.dataGridView1.DataSource = this.employeeBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(505, 62);
+            this.dataGridView1.Location = new System.Drawing.Point(498, 116);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 60;
-            this.dataGridView1.Size = new System.Drawing.Size(1273, 453);
+            this.dataGridView1.Size = new System.Drawing.Size(941, 388);
             this.dataGridView1.TabIndex = 74;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // HRForm
             // 
+            this.AcceptButton = this.bt_Edit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._3881977f990886521e929f16e5d765e9;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1805, 733);
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1491, 733);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);

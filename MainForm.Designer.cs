@@ -51,7 +51,7 @@ namespace MultiFaceRec
             // 
             this.bt_Checkin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.bt_Checkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Checkin.Location = new System.Drawing.Point(128, 260);
+            this.bt_Checkin.Location = new System.Drawing.Point(201, 265);
             this.bt_Checkin.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Checkin.Name = "bt_Checkin";
             this.bt_Checkin.Size = new System.Drawing.Size(202, 54);
@@ -64,7 +64,7 @@ namespace MultiFaceRec
             // 
             this.bt_Checkout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bt_Checkout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Checkout.Location = new System.Drawing.Point(321, 260);
+            this.bt_Checkout.Location = new System.Drawing.Point(494, 265);
             this.bt_Checkout.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Checkout.Name = "bt_Checkout";
             this.bt_Checkout.Size = new System.Drawing.Size(190, 54);
@@ -76,7 +76,7 @@ namespace MultiFaceRec
             // 
             this.bt_ManageShift.BackColor = System.Drawing.Color.SandyBrown;
             this.bt_ManageShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ManageShift.Location = new System.Drawing.Point(619, 431);
+            this.bt_ManageShift.Location = new System.Drawing.Point(506, 464);
             this.bt_ManageShift.Margin = new System.Windows.Forms.Padding(4);
             this.bt_ManageShift.Name = "bt_ManageShift";
             this.bt_ManageShift.Size = new System.Drawing.Size(155, 54);
@@ -88,12 +88,13 @@ namespace MultiFaceRec
             // lb_LogOut
             // 
             this.lb_LogOut.AutoSize = true;
+            this.lb_LogOut.BackColor = System.Drawing.Color.Transparent;
             this.lb_LogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lb_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_LogOut.ForeColor = System.Drawing.Color.Blue;
-            this.lb_LogOut.Location = new System.Drawing.Point(194, 181);
+            this.lb_LogOut.Location = new System.Drawing.Point(950, 174);
             this.lb_LogOut.Name = "lb_LogOut";
-            this.lb_LogOut.Size = new System.Drawing.Size(59, 17);
+            this.lb_LogOut.Size = new System.Drawing.Size(82, 25);
             this.lb_LogOut.TabIndex = 21;
             this.lb_LogOut.Text = "Log Out";
             this.lb_LogOut.Click += new System.EventHandler(this.lb_LogOut_Click);
@@ -101,12 +102,13 @@ namespace MultiFaceRec
             // lb_Edit
             // 
             this.lb_Edit.AutoSize = true;
+            this.lb_Edit.BackColor = System.Drawing.Color.Transparent;
             this.lb_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lb_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Edit.ForeColor = System.Drawing.Color.Blue;
-            this.lb_Edit.Location = new System.Drawing.Point(96, 181);
+            this.lb_Edit.Location = new System.Drawing.Point(775, 174);
             this.lb_Edit.Name = "lb_Edit";
-            this.lb_Edit.Size = new System.Drawing.Size(81, 17);
+            this.lb_Edit.Size = new System.Drawing.Size(114, 25);
             this.lb_Edit.TabIndex = 19;
             this.lb_Edit.Text = "Edit My Info";
             this.lb_Edit.Click += new System.EventHandler(this.lb_Edit_Click);
@@ -114,8 +116,10 @@ namespace MultiFaceRec
             // lb_FnameLname
             // 
             this.lb_FnameLname.AutoSize = true;
+            this.lb_FnameLname.BackColor = System.Drawing.Color.Transparent;
             this.lb_FnameLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_FnameLname.Location = new System.Drawing.Point(95, 146);
+            this.lb_FnameLname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_FnameLname.Location = new System.Drawing.Point(776, 131);
             this.lb_FnameLname.Name = "lb_FnameLname";
             this.lb_FnameLname.Size = new System.Drawing.Size(235, 20);
             this.lb_FnameLname.TabIndex = 23;
@@ -124,8 +128,10 @@ namespace MultiFaceRec
             // lb_Welcome
             // 
             this.lb_Welcome.AutoSize = true;
+            this.lb_Welcome.BackColor = System.Drawing.Color.Transparent;
             this.lb_Welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Welcome.Location = new System.Drawing.Point(95, 107);
+            this.lb_Welcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lb_Welcome.Location = new System.Drawing.Point(776, 92);
             this.lb_Welcome.Name = "lb_Welcome";
             this.lb_Welcome.Size = new System.Drawing.Size(86, 20);
             this.lb_Welcome.TabIndex = 22;
@@ -134,20 +140,20 @@ namespace MultiFaceRec
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(92, 37);
+            this.label2.Location = new System.Drawing.Point(361, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(432, 52);
+            this.label2.Size = new System.Drawing.Size(399, 51);
             this.label2.TabIndex = 20;
-            this.label2.Text = "RIVERSIDE HOTEL";
+            this.label2.Text = "WINFORM HOTEL";
             // 
             // bt_Room
             // 
             this.bt_Room.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.bt_Room.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Room.Location = new System.Drawing.Point(467, 431);
+            this.bt_Room.Location = new System.Drawing.Point(223, 479);
             this.bt_Room.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Room.Name = "bt_Room";
             this.bt_Room.Size = new System.Drawing.Size(155, 54);
@@ -160,7 +166,7 @@ namespace MultiFaceRec
             // 
             this.bt_Shift.BackColor = System.Drawing.Color.NavajoWhite;
             this.bt_Shift.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Shift.Location = new System.Drawing.Point(496, 260);
+            this.bt_Shift.Location = new System.Drawing.Point(780, 265);
             this.bt_Shift.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Shift.Name = "bt_Shift";
             this.bt_Shift.Size = new System.Drawing.Size(179, 54);
@@ -173,7 +179,7 @@ namespace MultiFaceRec
             // 
             this.bt_Bill.BackColor = System.Drawing.Color.Gold;
             this.bt_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Bill.Location = new System.Drawing.Point(772, 431);
+            this.bt_Bill.Location = new System.Drawing.Point(780, 464);
             this.bt_Bill.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Bill.Name = "bt_Bill";
             this.bt_Bill.Size = new System.Drawing.Size(155, 54);
@@ -185,7 +191,7 @@ namespace MultiFaceRec
             // 
             this.bt_HumanResource.BackColor = System.Drawing.Color.LawnGreen;
             this.bt_HumanResource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_HumanResource.Location = new System.Drawing.Point(730, 576);
+            this.bt_HumanResource.Location = new System.Drawing.Point(223, 685);
             this.bt_HumanResource.Margin = new System.Windows.Forms.Padding(4);
             this.bt_HumanResource.Name = "bt_HumanResource";
             this.bt_HumanResource.Size = new System.Drawing.Size(155, 54);
@@ -198,7 +204,7 @@ namespace MultiFaceRec
             // 
             this.bt_Salary.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Salary.Location = new System.Drawing.Point(877, 576);
+            this.bt_Salary.Location = new System.Drawing.Point(506, 685);
             this.bt_Salary.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Salary.Name = "bt_Salary";
             this.bt_Salary.Size = new System.Drawing.Size(155, 54);
@@ -210,7 +216,7 @@ namespace MultiFaceRec
             // 
             this.bt_Stored.BackColor = System.Drawing.Color.Green;
             this.bt_Stored.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Stored.Location = new System.Drawing.Point(1029, 576);
+            this.bt_Stored.Location = new System.Drawing.Point(780, 696);
             this.bt_Stored.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Stored.Name = "bt_Stored";
             this.bt_Stored.Size = new System.Drawing.Size(155, 54);
@@ -221,7 +227,7 @@ namespace MultiFaceRec
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(365, 107);
+            this.pictureBox.Location = new System.Drawing.Point(1046, 92);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(105, 107);
@@ -234,7 +240,8 @@ namespace MultiFaceRec
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._3881977f990886521e929f16e5d765e9;
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources.a4a5cbaabf730f310a30c6c9965de581;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 841);
             this.Controls.Add(this.bt_Stored);
             this.Controls.Add(this.bt_Salary);

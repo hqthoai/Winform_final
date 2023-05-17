@@ -85,7 +85,7 @@ namespace MultiFaceRec
             // txb_pupli
             // 
             this.txb_pupli.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_pupli.Location = new System.Drawing.Point(478, 299);
+            this.txb_pupli.Location = new System.Drawing.Point(413, 256);
             this.txb_pupli.Name = "txb_pupli";
             this.txb_pupli.Size = new System.Drawing.Size(169, 27);
             this.txb_pupli.TabIndex = 162;
@@ -96,7 +96,7 @@ namespace MultiFaceRec
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(392, 299);
+            this.label2.Location = new System.Drawing.Point(327, 256);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 23);
             this.label2.TabIndex = 161;
@@ -107,7 +107,7 @@ namespace MultiFaceRec
             this.bt_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Book.ForeColor = System.Drawing.Color.White;
-            this.bt_Book.Location = new System.Drawing.Point(295, 360);
+            this.bt_Book.Location = new System.Drawing.Point(248, 418);
             this.bt_Book.Name = "bt_Book";
             this.bt_Book.Size = new System.Drawing.Size(113, 49);
             this.bt_Book.TabIndex = 158;
@@ -121,7 +121,7 @@ namespace MultiFaceRec
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(392, 159);
+            this.label1.Location = new System.Drawing.Point(327, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 157;
@@ -130,7 +130,7 @@ namespace MultiFaceRec
             // txb_Phone
             // 
             this.txb_Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Phone.Location = new System.Drawing.Point(478, 155);
+            this.txb_Phone.Location = new System.Drawing.Point(413, 112);
             this.txb_Phone.Name = "txb_Phone";
             this.txb_Phone.Size = new System.Drawing.Size(169, 27);
             this.txb_Phone.TabIndex = 156;
@@ -141,7 +141,7 @@ namespace MultiFaceRec
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(79, 206);
+            this.label3.Location = new System.Drawing.Point(14, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 23);
             this.label3.TabIndex = 155;
@@ -153,7 +153,7 @@ namespace MultiFaceRec
             this.lb_RoomID.BackColor = System.Drawing.Color.Transparent;
             this.lb_RoomID.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_RoomID.ForeColor = System.Drawing.Color.Black;
-            this.lb_RoomID.Location = new System.Drawing.Point(320, 101);
+            this.lb_RoomID.Location = new System.Drawing.Point(255, 58);
             this.lb_RoomID.Name = "lb_RoomID";
             this.lb_RoomID.Size = new System.Drawing.Size(83, 23);
             this.lb_RoomID.TabIndex = 154;
@@ -162,7 +162,7 @@ namespace MultiFaceRec
             // txb_GuestName
             // 
             this.txb_GuestName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_GuestName.Location = new System.Drawing.Point(194, 158);
+            this.txb_GuestName.Location = new System.Drawing.Point(129, 115);
             this.txb_GuestName.Name = "txb_GuestName";
             this.txb_GuestName.Size = new System.Drawing.Size(149, 27);
             this.txb_GuestName.TabIndex = 153;
@@ -173,7 +173,7 @@ namespace MultiFaceRec
             this.lb_total.BackColor = System.Drawing.Color.Transparent;
             this.lb_total.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_total.ForeColor = System.Drawing.Color.Black;
-            this.lb_total.Location = new System.Drawing.Point(177, 309);
+            this.lb_total.Location = new System.Drawing.Point(112, 266);
             this.lb_total.Name = "lb_total";
             this.lb_total.Size = new System.Drawing.Size(22, 27);
             this.lb_total.TabIndex = 152;
@@ -184,7 +184,7 @@ namespace MultiFaceRec
             this.dtp_Leave.CustomFormat = "";
             this.dtp_Leave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Leave.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Leave.Location = new System.Drawing.Point(478, 209);
+            this.dtp_Leave.Location = new System.Drawing.Point(413, 166);
             this.dtp_Leave.Name = "dtp_Leave";
             this.dtp_Leave.Size = new System.Drawing.Size(169, 27);
             this.dtp_Leave.TabIndex = 151;
@@ -196,7 +196,7 @@ namespace MultiFaceRec
             this.dtp_Arrival.CustomFormat = "";
             this.dtp_Arrival.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_Arrival.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_Arrival.Location = new System.Drawing.Point(194, 206);
+            this.dtp_Arrival.Location = new System.Drawing.Point(129, 163);
             this.dtp_Arrival.Name = "dtp_Arrival";
             this.dtp_Arrival.Size = new System.Drawing.Size(149, 27);
             this.dtp_Arrival.TabIndex = 150;
@@ -206,7 +206,7 @@ namespace MultiFaceRec
             // 
             this.txb_Price.Enabled = false;
             this.txb_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Price.Location = new System.Drawing.Point(194, 250);
+            this.txb_Price.Location = new System.Drawing.Point(129, 207);
             this.txb_Price.Name = "txb_Price";
             this.txb_Price.Size = new System.Drawing.Size(149, 27);
             this.txb_Price.TabIndex = 149;
@@ -215,7 +215,7 @@ namespace MultiFaceRec
             // 
             this.txb_Days.Enabled = false;
             this.txb_Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Days.Location = new System.Drawing.Point(478, 249);
+            this.txb_Days.Location = new System.Drawing.Point(413, 206);
             this.txb_Days.Name = "txb_Days";
             this.txb_Days.Size = new System.Drawing.Size(169, 27);
             this.txb_Days.TabIndex = 148;
@@ -226,7 +226,7 @@ namespace MultiFaceRec
             this.lblChiTietSoDem.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietSoDem.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietSoDem.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietSoDem.Location = new System.Drawing.Point(392, 250);
+            this.lblChiTietSoDem.Location = new System.Drawing.Point(327, 207);
             this.lblChiTietSoDem.Name = "lblChiTietSoDem";
             this.lblChiTietSoDem.Size = new System.Drawing.Size(62, 23);
             this.lblChiTietSoDem.TabIndex = 146;
@@ -238,7 +238,7 @@ namespace MultiFaceRec
             this.lblChiTietThanhTien.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietThanhTien.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietThanhTien.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietThanhTien.Location = new System.Drawing.Point(79, 307);
+            this.lblChiTietThanhTien.Location = new System.Drawing.Point(14, 264);
             this.lblChiTietThanhTien.Name = "lblChiTietThanhTien";
             this.lblChiTietThanhTien.Size = new System.Drawing.Size(54, 23);
             this.lblChiTietThanhTien.TabIndex = 147;
@@ -250,7 +250,7 @@ namespace MultiFaceRec
             this.lblChiTietNgayDi.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietNgayDi.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietNgayDi.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietNgayDi.Location = new System.Drawing.Point(395, 209);
+            this.lblChiTietNgayDi.Location = new System.Drawing.Point(330, 166);
             this.lblChiTietNgayDi.Name = "lblChiTietNgayDi";
             this.lblChiTietNgayDi.Size = new System.Drawing.Size(58, 23);
             this.lblChiTietNgayDi.TabIndex = 145;
@@ -262,7 +262,7 @@ namespace MultiFaceRec
             this.lblChiTietGiaPhong.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietGiaPhong.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietGiaPhong.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietGiaPhong.Location = new System.Drawing.Point(79, 257);
+            this.lblChiTietGiaPhong.Location = new System.Drawing.Point(14, 214);
             this.lblChiTietGiaPhong.Name = "lblChiTietGiaPhong";
             this.lblChiTietGiaPhong.Size = new System.Drawing.Size(52, 23);
             this.lblChiTietGiaPhong.TabIndex = 144;
@@ -274,7 +274,7 @@ namespace MultiFaceRec
             this.lblChiTietTenBooking.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietTenBooking.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietTenBooking.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietTenBooking.Location = new System.Drawing.Point(79, 158);
+            this.lblChiTietTenBooking.Location = new System.Drawing.Point(14, 115);
             this.lblChiTietTenBooking.Name = "lblChiTietTenBooking";
             this.lblChiTietTenBooking.Size = new System.Drawing.Size(110, 23);
             this.lblChiTietTenBooking.TabIndex = 143;
@@ -286,7 +286,7 @@ namespace MultiFaceRec
             this.lblChiTietLoaiPhong.BackColor = System.Drawing.Color.Transparent;
             this.lblChiTietLoaiPhong.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChiTietLoaiPhong.ForeColor = System.Drawing.Color.Black;
-            this.lblChiTietLoaiPhong.Location = new System.Drawing.Point(79, 101);
+            this.lblChiTietLoaiPhong.Location = new System.Drawing.Point(14, 58);
             this.lblChiTietLoaiPhong.Name = "lblChiTietLoaiPhong";
             this.lblChiTietLoaiPhong.Size = new System.Drawing.Size(83, 23);
             this.lblChiTietLoaiPhong.TabIndex = 142;
@@ -297,7 +297,6 @@ namespace MultiFaceRec
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox1.Controls.Add(this.txb_pupli);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.bt_Book);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txb_Phone);
             this.groupBox1.Controls.Add(this.label3);
@@ -318,7 +317,7 @@ namespace MultiFaceRec
             this.groupBox1.ForeColor = System.Drawing.Color.Teal;
             this.groupBox1.Location = new System.Drawing.Point(23, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 488);
+            this.groupBox1.Size = new System.Drawing.Size(615, 336);
             this.groupBox1.TabIndex = 146;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Booking Info";
@@ -527,10 +526,11 @@ namespace MultiFaceRec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._7acdc2abc33a96a7296c24b97f6bdf5d;
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(1629, 605);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.bt_Book);
             this.Name = "BookingForm";
             this.Text = "BookingForm";
             this.Load += new System.EventHandler(this.BookingForm_Load);

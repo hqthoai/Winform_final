@@ -49,9 +49,9 @@ namespace MultiFaceRec
             this.panel1.Controls.Add(this.rbt_Receptionist);
             this.panel1.Controls.Add(this.rdb_Manager);
             this.panel1.ForeColor = System.Drawing.Color.Teal;
-            this.panel1.Location = new System.Drawing.Point(184, 549);
+            this.panel1.Location = new System.Drawing.Point(168, 335);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(505, 41);
+            this.panel1.Size = new System.Drawing.Size(464, 52);
             this.panel1.TabIndex = 23;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -59,7 +59,7 @@ namespace MultiFaceRec
             // 
             this.rbt_Labour.AutoSize = true;
             this.rbt_Labour.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbt_Labour.Location = new System.Drawing.Point(350, 3);
+            this.rbt_Labour.Location = new System.Drawing.Point(349, 15);
             this.rbt_Labour.Name = "rbt_Labour";
             this.rbt_Labour.Size = new System.Drawing.Size(88, 24);
             this.rbt_Labour.TabIndex = 13;
@@ -71,7 +71,7 @@ namespace MultiFaceRec
             // 
             this.rbt_Receptionist.AutoSize = true;
             this.rbt_Receptionist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbt_Receptionist.Location = new System.Drawing.Point(185, 3);
+            this.rbt_Receptionist.Location = new System.Drawing.Point(181, 15);
             this.rbt_Receptionist.Name = "rbt_Receptionist";
             this.rbt_Receptionist.Size = new System.Drawing.Size(135, 24);
             this.rbt_Receptionist.TabIndex = 11;
@@ -83,7 +83,7 @@ namespace MultiFaceRec
             // 
             this.rdb_Manager.AutoSize = true;
             this.rdb_Manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdb_Manager.Location = new System.Drawing.Point(54, 3);
+            this.rdb_Manager.Location = new System.Drawing.Point(48, 15);
             this.rdb_Manager.Name = "rdb_Manager";
             this.rdb_Manager.Size = new System.Drawing.Size(102, 24);
             this.rdb_Manager.TabIndex = 12;
@@ -93,17 +93,19 @@ namespace MultiFaceRec
             // 
             // TextBoxPassword
             // 
-            this.TextBoxPassword.Location = new System.Drawing.Point(385, 471);
+            this.TextBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxPassword.Location = new System.Drawing.Point(369, 228);
             this.TextBoxPassword.Name = "TextBoxPassword";
             this.TextBoxPassword.PasswordChar = 'k';
-            this.TextBoxPassword.Size = new System.Drawing.Size(226, 22);
+            this.TextBoxPassword.Size = new System.Drawing.Size(263, 34);
             this.TextBoxPassword.TabIndex = 16;
             // 
             // TextBoxUsername
             // 
-            this.TextBoxUsername.Location = new System.Drawing.Point(385, 384);
+            this.TextBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxUsername.Location = new System.Drawing.Point(369, 132);
             this.TextBoxUsername.Name = "TextBoxUsername";
-            this.TextBoxUsername.Size = new System.Drawing.Size(226, 22);
+            this.TextBoxUsername.Size = new System.Drawing.Size(263, 34);
             this.TextBoxUsername.TabIndex = 14;
             // 
             // bt_Login
@@ -111,7 +113,7 @@ namespace MultiFaceRec
             this.bt_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Login.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Login.ForeColor = System.Drawing.Color.White;
-            this.bt_Login.Location = new System.Drawing.Point(285, 638);
+            this.bt_Login.Location = new System.Drawing.Point(269, 435);
             this.bt_Login.Name = "bt_Login";
             this.bt_Login.Size = new System.Drawing.Size(100, 43);
             this.bt_Login.TabIndex = 18;
@@ -127,7 +129,7 @@ namespace MultiFaceRec
             this.bt_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bt_Cancel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Cancel.ForeColor = System.Drawing.Color.White;
-            this.bt_Cancel.Location = new System.Drawing.Point(418, 640);
+            this.bt_Cancel.Location = new System.Drawing.Point(402, 437);
             this.bt_Cancel.Name = "bt_Cancel";
             this.bt_Cancel.Size = new System.Drawing.Size(100, 42);
             this.bt_Cancel.TabIndex = 19;
@@ -140,9 +142,9 @@ namespace MultiFaceRec
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(195, 471);
+            this.label3.Location = new System.Drawing.Point(211, 231);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 28);
+            this.label3.Size = new System.Drawing.Size(133, 28);
             this.label3.TabIndex = 17;
             this.label3.Text = "Password:";
             // 
@@ -151,7 +153,7 @@ namespace MultiFaceRec
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(106, 377);
+            this.label2.Location = new System.Drawing.Point(127, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(217, 29);
             this.label2.TabIndex = 15;
@@ -161,9 +163,9 @@ namespace MultiFaceRec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._2ba60407a0fb3197768c6a4b9901667e;
+            this.BackgroundImage = global::MultiFaceRec.Properties.Resources._7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(847, 756);
+            this.ClientSize = new System.Drawing.Size(823, 582);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TextBoxPassword);
             this.Controls.Add(this.TextBoxUsername);

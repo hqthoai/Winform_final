@@ -46,7 +46,6 @@ namespace MultiFaceRec
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.storageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotelManagementDataSet = new MultiFaceRec.hotelManagementDataSet();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bt_Reset = new System.Windows.Forms.Button();
             this.bt_Refresh = new System.Windows.Forms.Button();
             this.bt_Remove = new System.Windows.Forms.Button();
@@ -58,7 +57,6 @@ namespace MultiFaceRec
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -73,7 +71,7 @@ namespace MultiFaceRec
             this.groupBox1.Controls.Add(this.tb_PID);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.groupBox1.Location = new System.Drawing.Point(216, 107);
+            this.groupBox1.Location = new System.Drawing.Point(63, 107);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(341, 252);
             this.groupBox1.TabIndex = 0;
@@ -176,12 +174,12 @@ namespace MultiFaceRec
             this.quanityDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.storageBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(563, 107);
+            this.dataGridView1.Location = new System.Drawing.Point(531, 107);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 60;
-            this.dataGridView1.Size = new System.Drawing.Size(623, 316);
+            this.dataGridView1.Size = new System.Drawing.Size(623, 252);
             this.dataGridView1.TabIndex = 75;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -224,31 +222,15 @@ namespace MultiFaceRec
             this.hotelManagementDataSet.DataSetName = "HotelManagementDataSet";
             this.hotelManagementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.bt_Reset);
-            this.groupBox2.Controls.Add(this.bt_Refresh);
-            this.groupBox2.Controls.Add(this.bt_Remove);
-            this.groupBox2.Controls.Add(this.bt_Add);
-            this.groupBox2.Controls.Add(this.bt_Edit);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox2.Location = new System.Drawing.Point(390, 478);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(494, 143);
-            this.groupBox2.TabIndex = 91;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Editing";
-            // 
             // bt_Reset
             // 
             this.bt_Reset.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Reset.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Reset.ForeColor = System.Drawing.Color.Black;
-            this.bt_Reset.Location = new System.Drawing.Point(369, 85);
+            this.bt_Reset.Location = new System.Drawing.Point(63, 453);
             this.bt_Reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Reset.Name = "bt_Reset";
-            this.bt_Reset.Size = new System.Drawing.Size(93, 41);
+            this.bt_Reset.Size = new System.Drawing.Size(341, 46);
             this.bt_Reset.TabIndex = 3;
             this.bt_Reset.Text = "Reset";
             this.bt_Reset.UseVisualStyleBackColor = false;
@@ -259,10 +241,10 @@ namespace MultiFaceRec
             this.bt_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Refresh.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Refresh.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Refresh.Location = new System.Drawing.Point(42, 33);
+            this.bt_Refresh.Location = new System.Drawing.Point(987, 363);
             this.bt_Refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Refresh.Name = "bt_Refresh";
-            this.bt_Refresh.Size = new System.Drawing.Size(406, 48);
+            this.bt_Refresh.Size = new System.Drawing.Size(167, 48);
             this.bt_Refresh.TabIndex = 4;
             this.bt_Refresh.Text = "Refresh";
             this.bt_Refresh.UseVisualStyleBackColor = false;
@@ -273,7 +255,7 @@ namespace MultiFaceRec
             this.bt_Remove.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Remove.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Remove.ForeColor = System.Drawing.Color.Black;
-            this.bt_Remove.Location = new System.Drawing.Point(244, 85);
+            this.bt_Remove.Location = new System.Drawing.Point(296, 379);
             this.bt_Remove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Remove.Name = "bt_Remove";
             this.bt_Remove.Size = new System.Drawing.Size(108, 41);
@@ -287,10 +269,10 @@ namespace MultiFaceRec
             this.bt_Add.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Add.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Add.ForeColor = System.Drawing.Color.Black;
-            this.bt_Add.Location = new System.Drawing.Point(32, 85);
+            this.bt_Add.Location = new System.Drawing.Point(63, 379);
             this.bt_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Add.Name = "bt_Add";
-            this.bt_Add.Size = new System.Drawing.Size(71, 41);
+            this.bt_Add.Size = new System.Drawing.Size(80, 41);
             this.bt_Add.TabIndex = 0;
             this.bt_Add.Text = "Add";
             this.bt_Add.UseVisualStyleBackColor = false;
@@ -301,10 +283,10 @@ namespace MultiFaceRec
             this.bt_Edit.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Edit.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit.ForeColor = System.Drawing.Color.Black;
-            this.bt_Edit.Location = new System.Drawing.Point(125, 85);
+            this.bt_Edit.Location = new System.Drawing.Point(180, 379);
             this.bt_Edit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Edit.Name = "bt_Edit";
-            this.bt_Edit.Size = new System.Drawing.Size(77, 41);
+            this.bt_Edit.Size = new System.Drawing.Size(78, 41);
             this.bt_Edit.TabIndex = 1;
             this.bt_Edit.Text = "Edit";
             this.bt_Edit.UseVisualStyleBackColor = false;
@@ -319,8 +301,13 @@ namespace MultiFaceRec
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MultiFaceRec.Properties.Resources._48bc45ff496120273edb97a4089d2115;
-            this.ClientSize = new System.Drawing.Size(1212, 666);
-            this.Controls.Add(this.groupBox2);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1212, 560);
+            this.Controls.Add(this.bt_Reset);
+            this.Controls.Add(this.bt_Remove);
+            this.Controls.Add(this.bt_Refresh);
+            this.Controls.Add(this.bt_Edit);
+            this.Controls.Add(this.bt_Add);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "StorageForm";
@@ -332,7 +319,6 @@ namespace MultiFaceRec
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,7 +334,6 @@ namespace MultiFaceRec
         private System.Windows.Forms.Label lb_EID;
         private System.Windows.Forms.TextBox tb_PID;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button bt_Reset;
         private System.Windows.Forms.Button bt_Refresh;
         private System.Windows.Forms.Button bt_Remove;
