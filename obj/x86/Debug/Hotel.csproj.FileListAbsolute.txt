@@ -1,0 +1,129 @@
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\bin\Debug\MultiFaceRec.exe
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\bin\Debug\MultiFaceRec.pdb
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\bin\Debug\Emgu.CV.xml
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\bin\Debug\Emgu.Util.xml
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.HRForm.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.MainForm.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\Hotel.csproj.CopyComplete
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.exe
+C:\Users\Kayle\Downloads\FaceRecProOV\FaceRecProOV\obj\x86\Debug\MultiFaceRec.pdb
+E:\New folder (2)\bin\Debug\MultiFaceRec.exe.config
+E:\New folder (2)\bin\Debug\MultiFaceRec.exe
+E:\New folder (2)\bin\Debug\MultiFaceRec.pdb
+E:\New folder (2)\bin\Debug\Emgu.CV.xml
+E:\New folder (2)\bin\Debug\Emgu.CV.UI.xml
+E:\New folder (2)\bin\Debug\Emgu.Util.xml
+E:\New folder (2)\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.HRForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.MainForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+E:\New folder (2)\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+E:\New folder (2)\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+E:\New folder (2)\obj\x86\Debug\Hotel.csproj.CopyComplete
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.exe
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.pdb
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+E:\New folder (2)\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+E:\BackupPrj(1)\bin\Debug\MultiFaceRec.exe.config
+E:\BackupPrj(1)\bin\Debug\MultiFaceRec.exe
+E:\BackupPrj(1)\bin\Debug\MultiFaceRec.pdb
+E:\BackupPrj(1)\bin\Debug\Emgu.CV.xml
+E:\BackupPrj(1)\bin\Debug\Emgu.CV.UI.xml
+E:\BackupPrj(1)\bin\Debug\Emgu.Util.xml
+E:\BackupPrj(1)\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.HRForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.MainForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+E:\BackupPrj(1)\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+E:\BackupPrj(1)\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+E:\BackupPrj(1)\obj\x86\Debug\Hotel.csproj.CopyComplete
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.exe
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.pdb
+E:\BackupPrj(1)\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+E:\BackupPrj(2)\bin\Debug\MultiFaceRec.exe.config
+E:\BackupPrj(2)\bin\Debug\MultiFaceRec.exe
+E:\BackupPrj(2)\bin\Debug\MultiFaceRec.pdb
+E:\BackupPrj(2)\bin\Debug\Emgu.CV.xml
+E:\BackupPrj(2)\bin\Debug\Emgu.CV.UI.xml
+E:\BackupPrj(2)\bin\Debug\Emgu.Util.xml
+E:\BackupPrj(2)\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.HRForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.MainForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+E:\BackupPrj(2)\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+E:\BackupPrj(2)\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+E:\BackupPrj(2)\obj\x86\Debug\Hotel.csproj.CopyComplete
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.exe
+E:\BackupPrj(2)\obj\x86\Debug\MultiFaceRec.pdb
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\MultiFaceRec.exe.config
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\MultiFaceRec.exe
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\MultiFaceRec.pdb
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\Emgu.CV.xml
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\Emgu.CV.UI.xml
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\bin\Debug\Emgu.Util.xml
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.HRForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.MainForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.CopyComplete
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.exe
+E:\KNOWLEDGE\Year02\Winform\Project Respository\FINALTERM\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.pdb
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\bin\Debug\MultiFaceRec.exe
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\bin\Debug\MultiFaceRec.exe.config
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.HRForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.MainForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.CopyComplete
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.exe
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.pdb
+D:\VisualStudio2022\filecode\c##\WinFormEndTerm\bin\Debug\MultiFaceRec.pdb
