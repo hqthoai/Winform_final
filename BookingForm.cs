@@ -14,6 +14,7 @@ namespace MultiFaceRec
     {
         public static int Roomid;
         int numberofpeople;
+        int serPrice = 0;
         CultureInfo culture = new CultureInfo("vi-VN");
         public BookingForm(int RoomID)
         {
@@ -113,6 +114,7 @@ namespace MultiFaceRec
                         {
                             sum += Convert.ToInt32(datagridview1.Rows[i].Cells[4].Value);
                         }
+                        serPrice = sum;
                         lb_Sum.Text = ("Total: " + sum.ToString("c", culture));
                         sum = 0;
                     }   
@@ -125,12 +127,14 @@ namespace MultiFaceRec
                 {
                     if (order.insert(RoomID, Pname, price, amount, total))
                     {
+                        datagridview1.DataSource= order.GetOrderByID(Roomid);
                         BookingForm_Load(null, null);
                         int sum = 0;
                         for (int i = 0; i < datagridview1.Rows.Count; i++)
                         {
                             sum += Convert.ToInt32(datagridview1.Rows[i].Cells[4].Value);
                         }
+                        serPrice = sum;
                         lb_Sum.Text = ("Total: " + sum.ToString("c", culture));
                         sum = 0;
                     }
@@ -267,7 +271,7 @@ namespace MultiFaceRec
                         {
                             int status = 1;
                             //insert(int RID, string gname, string phone,int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
-                            if (book.insert(RID, Gname, Phone, people, arr, leave, price, status))
+                            if (book.insert(RID, Gname, Phone, people, arr, leave, price, status , serPrice))
                             {
                                 MessageBox.Show("Booking Room Sucessfully!", "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 

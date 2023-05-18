@@ -186,6 +186,7 @@ namespace MultiFaceRec
             this.bt_Bill.TabIndex = 27;
             this.bt_Bill.Text = "BILL";
             this.bt_Bill.UseVisualStyleBackColor = false;
+            this.bt_Bill.Click += new System.EventHandler(this.bt_Bill_Click);
             // 
             // bt_HumanResource
             // 

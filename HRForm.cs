@@ -23,7 +23,7 @@ namespace MultiFaceRec
             dataGridView1.DataSource = employee.GetAllEmployee();
             dataGridView1.RowTemplate.Height = 60;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[11];
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGridView1.ClearSelection();
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -41,6 +41,7 @@ namespace MultiFaceRec
             comboBox1.ValueMember = "RoleID";
             comboBox1.DisplayMember = "Role";
             //comboBox1.SelectedItem = null;
+   
         }
         private void bt_Add_Click(object sender, EventArgs e)
         {
@@ -178,7 +179,7 @@ namespace MultiFaceRec
             dt_Birthday.Value = (DateTime)dataGridView1.CurrentRow.Cells[3].Value;
 
             // Gender
-            if ((dataGridView1.CurrentRow.Cells[4].Value.ToString() == "Female"))
+            if ((dataGridView1.CurrentRow.Cells[4].Value.ToString() == "Female")||(dataGridView1.CurrentRow.Cells[4].Value.ToString() == "female"))
             {
                 RadioButtonFemale.Checked = true;
                 RadioButtonMale.Checked = false;
@@ -191,14 +192,14 @@ namespace MultiFaceRec
 
             tb_Phone.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             tb_Address.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[7].Value.ToString());
-            comboBox1.SelectedIndex = c - 1;
-            tb_Email.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[8].Value.ToString());
+            comboBox1.SelectedIndex = c-1;
+            tb_Email.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
             tb_UserName.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
             tb_Password.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
 
             byte[] pic;
-            pic = (byte[])dataGridView1.CurrentRow.Cells[11].Value;
+            pic = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(pic));
             pb_PictureImage.Image = x;
         }
@@ -224,16 +225,16 @@ namespace MultiFaceRec
 
             tb_Phone.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             tb_Address.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[7].Value.ToString());
-            comboBox1.SelectedIndex = c - 1;
-            tb_Email.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            tb_UserName.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            tb_Password.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-
+            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[8].Value.ToString());
+            comboBox1.Text = c.ToString();
             byte[] pic;
-            pic = (byte[])dataGridView1.CurrentRow.Cells[11].Value;
+            pic = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(pic));
             pb_PictureImage.Image = x;
+
+            tb_Email.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            tb_UserName.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            tb_Password.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
         }
         bool Verif()
         {
@@ -276,7 +277,7 @@ namespace MultiFaceRec
             dataGridView1.DataSource = employee.GetAllEmployee();
             dataGridView1.RowTemplate.Height = 60;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[11];
+            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGridView1.ClearSelection();
             for (int i = 0; i < dataGridView1.Rows.Count; i++)

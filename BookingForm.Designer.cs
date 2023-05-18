@@ -371,7 +371,7 @@ namespace MultiFaceRec
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.datagridview1.DataSource = this.orderBindingSource1;
-            this.datagridview1.Location = new System.Drawing.Point(70, 58);
+            this.datagridview1.Location = new System.Drawing.Point(24, 46);
             this.datagridview1.Name = "datagridview1";
             this.datagridview1.ReadOnly = true;
             this.datagridview1.RowHeadersVisible = false;
@@ -444,7 +444,7 @@ namespace MultiFaceRec
             this.bt_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Add.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Add.ForeColor = System.Drawing.Color.White;
-            this.bt_Add.Location = new System.Drawing.Point(328, 425);
+            this.bt_Add.Location = new System.Drawing.Point(177, 416);
             this.bt_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Add.Name = "bt_Add";
             this.bt_Add.Size = new System.Drawing.Size(89, 41);
@@ -458,10 +458,10 @@ namespace MultiFaceRec
             this.bt_Remove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_Remove.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Remove.ForeColor = System.Drawing.Color.White;
-            this.bt_Remove.Location = new System.Drawing.Point(441, 425);
+            this.bt_Remove.Location = new System.Drawing.Point(358, 416);
             this.bt_Remove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_Remove.Name = "bt_Remove";
-            this.bt_Remove.Size = new System.Drawing.Size(78, 41);
+            this.bt_Remove.Size = new System.Drawing.Size(100, 41);
             this.bt_Remove.TabIndex = 151;
             this.bt_Remove.Text = "Remove";
             this.bt_Remove.UseVisualStyleBackColor = false;
@@ -480,9 +480,9 @@ namespace MultiFaceRec
             this.groupBox2.Controls.Add(this.lblTenDichVu);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox2.Location = new System.Drawing.Point(782, 58);
+            this.groupBox2.Location = new System.Drawing.Point(644, 58);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(824, 488);
+            this.groupBox2.Size = new System.Drawing.Size(753, 488);
             this.groupBox2.TabIndex = 147;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Services";
@@ -527,7 +527,7 @@ namespace MultiFaceRec
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MultiFaceRec.Properties.Resources._1;
-            this.ClientSize = new System.Drawing.Size(1629, 605);
+            this.ClientSize = new System.Drawing.Size(1415, 605);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.bt_Book);

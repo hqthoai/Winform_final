@@ -113,5 +113,11 @@ namespace MultiFaceRec
             EShiftForm ESF = new EShiftForm(Global.GlobalWokerID1);
             ESF.Show(this);
         }
+
+        private void bt_Bill_Click(object sender, EventArgs e)
+        {
+            BillForm billForm = new BillForm();
+            billForm.Show(this);
+        }
     }
 }

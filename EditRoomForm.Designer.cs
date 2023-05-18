@@ -893,6 +893,7 @@ namespace MultiFaceRec
             // bt_CheckOut3
             // 
             this.bt_CheckOut3.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut3.Enabled = false;
             this.bt_CheckOut3.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut3.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut3.Location = new System.Drawing.Point(184, 341);

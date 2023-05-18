@@ -19,6 +19,7 @@ namespace MultiFaceRec
         DataTable table = new DataTable();
         Order order = new Order();
         Storage storage = new Storage();
+        Bill bill = new Bill();
         private void EditRoomForm_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -324,15 +325,19 @@ namespace MultiFaceRec
         {
             try
             {
-                #region Update lại table booking
                 int roomID = 1;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+
+                DataTable dt = book.GetBookingByID(roomID); 
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(),Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse( dt.Rows[0][4].ToString()), DateTime.Parse( dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
+                
+
+                #region Update lại table booking
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
+
                 if (book.delete(roomID))
                 {
                     #region Load Room1
@@ -385,13 +390,13 @@ namespace MultiFaceRec
             {
                 #region Update lại table booking
                 int roomID = 2;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+                DataTable dt = book.GetBookingByID(roomID);
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
                 if (book.delete(roomID))
                 {
                     #region Load Room1
@@ -444,13 +449,13 @@ namespace MultiFaceRec
             {
                 #region Update lại table booking
                 int roomID = 3;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+                DataTable dt = book.GetBookingByID(roomID);
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
                 if (book.delete(roomID))
                 {
                     #region Load Room1
@@ -503,13 +508,13 @@ namespace MultiFaceRec
             {
                 #region Update lại table booking
                 int roomID = 4;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+                DataTable dt = book.GetBookingByID(roomID);
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
                 if (book.delete(roomID))
                 {
                     #region Load Room1
@@ -562,13 +567,13 @@ namespace MultiFaceRec
             {
                 #region Update lại table booking
                 int roomID = 5;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+                DataTable dt = book.GetBookingByID(roomID);
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
                 if (book.delete(roomID))
                 {
                     #region Load Room1
@@ -621,13 +626,13 @@ namespace MultiFaceRec
             {
                 #region Update lại table booking
                 int roomID = 6;
-                string gnam = "";
-                string phone = "";
-                int pupil = 0;
+                DataTable dt = book.GetBookingByID(roomID);
+                if (dt.Rows.Count > 0)
+                {
+                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
-                int price = 0;
-                int status = 0;
                 if (book.delete(roomID))
                 {
                     #region Load Room1

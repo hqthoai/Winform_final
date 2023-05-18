@@ -171,3 +171,4 @@ D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csp
 D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.CopyComplete
 D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.exe
 D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.pdb
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.BillForm.resources

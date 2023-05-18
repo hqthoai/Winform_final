@@ -125,7 +125,7 @@ namespace MultiFaceRec
         //Lấy danh sách tất cả nhân viên
         public DataTable GetAllEmployee()
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Employee ", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM Employee", mydb.getConnection);
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

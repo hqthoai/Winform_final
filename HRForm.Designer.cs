@@ -78,18 +78,6 @@ namespace MultiFaceRec
             this.lb_Birthday = new System.Windows.Forms.Label();
             this.lb_LastName = new System.Windows.Forms.Label();
             this.lb_FirstName = new System.Windows.Forms.Label();
-            this.picDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataSet)).BeginInit();
@@ -669,111 +657,12 @@ namespace MultiFaceRec
             this.lb_FirstName.TabIndex = 93;
             this.lb_FirstName.Text = "First Name:";
             // 
-            // picDataGridViewImageColumn
-            // 
-            this.picDataGridViewImageColumn.DataPropertyName = "Pic";
-            this.picDataGridViewImageColumn.HeaderText = "Pic";
-            this.picDataGridViewImageColumn.MinimumWidth = 6;
-            this.picDataGridViewImageColumn.Name = "picDataGridViewImageColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
-            this.usernameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            // 
-            // gmailDataGridViewTextBoxColumn
-            // 
-            this.gmailDataGridViewTextBoxColumn.DataPropertyName = "gmail";
-            this.gmailDataGridViewTextBoxColumn.HeaderText = "Gmail";
-            this.gmailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.gmailDataGridViewTextBoxColumn.Name = "gmailDataGridViewTextBoxColumn";
-            // 
-            // roleIDDataGridViewTextBoxColumn
-            // 
-            this.roleIDDataGridViewTextBoxColumn.DataPropertyName = "RoleID";
-            this.roleIDDataGridViewTextBoxColumn.HeaderText = "RoleID";
-            this.roleIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.roleIDDataGridViewTextBoxColumn.Name = "roleIDDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
-            this.genderDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // bdateDataGridViewTextBoxColumn
-            // 
-            this.bdateDataGridViewTextBoxColumn.DataPropertyName = "Bdate";
-            this.bdateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
-            this.bdateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bdateDataGridViewTextBoxColumn.Name = "bdateDataGridViewTextBoxColumn";
-            // 
-            // lnameDataGridViewTextBoxColumn
-            // 
-            this.lnameDataGridViewTextBoxColumn.DataPropertyName = "Lname";
-            this.lnameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lnameDataGridViewTextBoxColumn.Name = "lnameDataGridViewTextBoxColumn";
-            // 
-            // fnameDataGridViewTextBoxColumn
-            // 
-            this.fnameDataGridViewTextBoxColumn.DataPropertyName = "Fname";
-            this.fnameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.fnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fnameDataGridViewTextBoxColumn.Name = "fnameDataGridViewTextBoxColumn";
-            // 
-            // eIDDataGridViewTextBoxColumn
-            // 
-            this.eIDDataGridViewTextBoxColumn.DataPropertyName = "EID";
-            this.eIDDataGridViewTextBoxColumn.HeaderText = "EmployeeID";
-            this.eIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.eIDDataGridViewTextBoxColumn.Name = "eIDDataGridViewTextBoxColumn";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.eIDDataGridViewTextBoxColumn,
-            this.fnameDataGridViewTextBoxColumn,
-            this.lnameDataGridViewTextBoxColumn,
-            this.bdateDataGridViewTextBoxColumn,
-            this.genderDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.roleIDDataGridViewTextBoxColumn,
-            this.gmailDataGridViewTextBoxColumn,
-            this.usernameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.picDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.employeeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(498, 116);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -873,18 +762,6 @@ namespace MultiFaceRec
         private System.Windows.Forms.Label lb_Birthday;
         private System.Windows.Forms.Label lb_LastName;
         private System.Windows.Forms.Label lb_FirstName;
-        private System.Windows.Forms.DataGridViewImageColumn picDataGridViewImageColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gmailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roleIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bdateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn eIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

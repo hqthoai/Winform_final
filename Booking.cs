@@ -25,10 +25,10 @@ namespace MultiFaceRec
             adapter.Fill(table);
             return table;
         }
-        public bool insert(int RID, string gname, string phone,int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
+        public bool insert(int RID, string gname, string phone,int pupil, DateTime Arrrival, DateTime Leave, int price, int status, int sPrice)
         {
 
-            SqlCommand command = new SqlCommand("insert into Booking values (@id, @gn, @pn, @peo, @arr,  @lea, @pr, @sta)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("insert into Booking values (@id, @gn, @pn, @peo, @arr,  @lea, @pr, @sta, @sp)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = RID;
             command.Parameters.Add("@gn", SqlDbType.NVarChar).Value = gname;
             //command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = phone;
@@ -38,6 +38,7 @@ namespace MultiFaceRec
             command.Parameters.Add("@lea", SqlDbType.Date).Value = Leave;
             command.Parameters.Add("@pr", SqlDbType.Int).Value = price;
             command.Parameters.Add("@sta", SqlDbType.Int).Value = status;
+            command.Parameters.Add("@sp", SqlDbType.Int).Value = sPrice;
 
             mydb.openConnection();
             if ((command.ExecuteNonQuery() == 1))
@@ -51,10 +52,10 @@ namespace MultiFaceRec
                 return false;
             }
         }
-        public bool update(int RID, string gname, string phone, int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
+        public bool update(int RID, string gname, string phone, int pupil, DateTime Arrrival, DateTime Leave, int price, int status, int sPrice)
         {
 
-            SqlCommand command = new SqlCommand("Update Booking SET gname = @new, phone=@pn, pupil = @peo, arrival = @arr, leave= @lea , price = @pr , status = @sta " +
+            SqlCommand command = new SqlCommand("Update Booking SET gname = @new, phone=@pn, pupil = @peo, arrival = @arr, leave= @lea , price = @pr , status = @sta, SerPrice=@sp" +
                                                  " Where Rid = @id", mydb.getConnection);
 
             command.Parameters.Add("@new", SqlDbType.NVarChar).Value = gname;
@@ -65,6 +66,7 @@ namespace MultiFaceRec
             command.Parameters.Add("@pr", SqlDbType.Int).Value = price;
             command.Parameters.Add("@sta", SqlDbType.Int).Value = status;
             command.Parameters.Add("@id", SqlDbType.Int).Value = RID;
+            command.Parameters.Add("@sp", SqlDbType.Int).Value = sPrice;
 
             mydb.openConnection();
             if ((command.ExecuteNonQuery() == 1))
