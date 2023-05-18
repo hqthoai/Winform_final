@@ -31,7 +31,8 @@ namespace MultiFaceRec
         {
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,13 +62,19 @@ namespace MultiFaceRec
             this.dataGridView1.Size = new System.Drawing.Size(1131, 570);
             this.dataGridView1.TabIndex = 2;
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(1087, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Visible = false;
+            this.textBox.Location = new System.Drawing.Point(721, 25);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(200, 22);
+            this.textBox.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1171, 671);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 4;
             // 
             // ShiftForm
             // 
@@ -75,7 +82,8 @@ namespace MultiFaceRec
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MultiFaceRec.Properties.Resources.ef6d3d0e42b7711fff4b65123f21eaa3;
             this.ClientSize = new System.Drawing.Size(1225, 676);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "ShiftForm";
@@ -90,6 +98,7 @@ namespace MultiFaceRec
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        internal System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

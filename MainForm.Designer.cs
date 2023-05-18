@@ -240,7 +240,6 @@ namespace MultiFaceRec
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackgroundImage = global::MultiFaceRec.Properties.Resources.a4a5cbaabf730f310a30c6c9965de581;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 841);
             this.Controls.Add(this.bt_Stored);

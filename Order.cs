@@ -102,7 +102,8 @@ namespace MultiFaceRec
         //Lấy Tất cả order ở các phòng để kiếm duyệt kho (Table Consume)
         public DataTable ConsumeTableByRoom(int RoomID)
         {
-            SqlCommand command = new SqlCommand("select Pname, sum(amount) as Consumed from [order] where rid = @id group by Pname", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("select Pname, sum(amount) as Consumed from [order] where rid = @id group by Pname", mydb.getConnection); 
+            SqlCommand command = new SqlCommand("select Pname, sum(amount) as Consumed from [order] where Rid = @id group by Pname", mydb.getConnection);       // khoa chinh
             command.Parameters.Add("id", SqlDbType.Int).Value = RoomID;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);

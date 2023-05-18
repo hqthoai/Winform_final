@@ -12,8 +12,12 @@ namespace MultiFaceRec
         MY_DB mydb = new MY_DB();
         public bool insert(int Pid, string Pname, int quanity, int price)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO Storage (Pid, Pname, quanity, price)" +
-                                                             " VALUES (@id, @pn, @qn, @pr)", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("INSERT INTO Storage (Pid, Pname, quanity, price)" +
+            //                                                 " VALUES (@id, @pn, @qn, @pr)", mydb.getConnection);
+
+
+            SqlCommand command = new SqlCommand("INSERT INTO Storage (Pid, pname, quantity, price)" +
+                                                             " VALUES (@id, @pn, @qn, @pr)", mydb.getConnection);   // khoa chinh
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = Pname;
             command.Parameters.Add("@qn", SqlDbType.Int).Value = quanity;
@@ -34,7 +38,7 @@ namespace MultiFaceRec
         }
         public bool Update(int Pid, string Pname, int quanity, int price)
         {
-            SqlCommand command = new SqlCommand("UPDATE Storage SET Pname = @pn, quanity = @qn, price = @pr" +
+            SqlCommand command = new SqlCommand("UPDATE Storage SET pname = @pn, quantity = @qn, price = @pr" +
                                                              " WHERE Pid = @id", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = Pname;
@@ -55,7 +59,8 @@ namespace MultiFaceRec
         }
         public bool UpdateStorage(int Pid, int quanity)
         {
-            SqlCommand command = new SqlCommand("UPDATE Storage SET  quanity = @qn" + " WHERE Pid = @id", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("UPDATE Storage SET  quanity = @qn" + " WHERE Pid = @id", mydb.getConnection);
+            SqlCommand command = new SqlCommand("UPDATE Storage SET  quantity = @qn" + " WHERE Pid = @id", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@qn", SqlDbType.Int).Value = quanity;
             mydb.openConnection();
@@ -72,7 +77,8 @@ namespace MultiFaceRec
         }
         public bool Delete(int Pid)
         {
-            SqlCommand command = new SqlCommand("DELETE FROM Storage WHERE pid = @eid", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("DELETE FROM Storage WHERE pid = @eid", mydb.getConnection);
+            SqlCommand command = new SqlCommand("DELETE FROM Storage WHERE Pid = @eid", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@eid", SqlDbType.Int).Value = Pid;
             mydb.openConnection();
 
@@ -99,7 +105,8 @@ namespace MultiFaceRec
         }
         public bool CheckEID(int PID)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Storage where pid = @eid", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("SELECT * FROM Storage where pid = @eid", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM Storage where Pid = @eid", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@eid", SqlDbType.Int).Value = PID;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -118,7 +125,8 @@ namespace MultiFaceRec
         }
         public bool CheckUserName(string ProductName, int Pid)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Storage where pname = @un and pid <> @eid", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("SELECT * FROM Storage where pname = @un and pid <> @eid", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM Storage where pname = @un and Pid <> @eid", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@un", SqlDbType.VarChar).Value = ProductName;
             command.Parameters.Add("@eid", SqlDbType.Int).Value = Pid;
             mydb.openConnection();
@@ -138,7 +146,8 @@ namespace MultiFaceRec
         }
         public DataTable GetAllProductByID(int Pid)
         {
-            SqlCommand command = new SqlCommand("SELECT Pname, price FROM Storage Where Pid = @id", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("SELECT Pname, price FROM Storage Where Pid = @id", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT pname, price FROM Storage Where Pid = @id", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -148,7 +157,8 @@ namespace MultiFaceRec
         }
         public DataTable StatictisTable()
         {
-            SqlCommand command = new SqlCommand("select Pname, quanity, pid from storage", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("select Pname, quanity, pid from storage", mydb.getConnection);
+            SqlCommand command = new SqlCommand("select pname, quantity, Pid from Storage", mydb.getConnection); // khoa chinh
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

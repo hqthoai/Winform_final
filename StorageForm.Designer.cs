@@ -40,10 +40,6 @@ namespace MultiFaceRec
             this.lb_EID = new System.Windows.Forms.Label();
             this.tb_PID = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.piDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quanityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.storageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotelManagementDataSet = new MultiFaceRec.hotelManagementDataSet();
             this.bt_Reset = new System.Windows.Forms.Button();
@@ -52,6 +48,10 @@ namespace MultiFaceRec
             this.bt_Add = new System.Windows.Forms.Button();
             this.bt_Edit = new System.Windows.Forms.Button();
             this.storageTableAdapter = new MultiFaceRec.hotelManagementDataSetTableAdapters.StorageTableAdapter();
+            this.piDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quanityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -184,34 +184,6 @@ namespace MultiFaceRec
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // piDDataGridViewTextBoxColumn
-            // 
-            this.piDDataGridViewTextBoxColumn.DataPropertyName = "PiD";
-            this.piDDataGridViewTextBoxColumn.HeaderText = "ProductID";
-            this.piDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.piDDataGridViewTextBoxColumn.Name = "piDDataGridViewTextBoxColumn";
-            // 
-            // pNameDataGridViewTextBoxColumn
-            // 
-            this.pNameDataGridViewTextBoxColumn.DataPropertyName = "PName";
-            this.pNameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.pNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pNameDataGridViewTextBoxColumn.Name = "pNameDataGridViewTextBoxColumn";
-            // 
-            // quanityDataGridViewTextBoxColumn
-            // 
-            this.quanityDataGridViewTextBoxColumn.DataPropertyName = "Quanity";
-            this.quanityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quanityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quanityDataGridViewTextBoxColumn.Name = "quanityDataGridViewTextBoxColumn";
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            // 
             // storageBindingSource
             // 
             this.storageBindingSource.DataMember = "Storage";
@@ -295,6 +267,34 @@ namespace MultiFaceRec
             // storageTableAdapter
             // 
             this.storageTableAdapter.ClearBeforeFill = true;
+            // 
+            // piDDataGridViewTextBoxColumn
+            // 
+            this.piDDataGridViewTextBoxColumn.DataPropertyName = "PiD";
+            this.piDDataGridViewTextBoxColumn.HeaderText = "ProductID";
+            this.piDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.piDDataGridViewTextBoxColumn.Name = "piDDataGridViewTextBoxColumn";
+            // 
+            // pNameDataGridViewTextBoxColumn
+            // 
+            this.pNameDataGridViewTextBoxColumn.DataPropertyName = "PName";
+            this.pNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.pNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pNameDataGridViewTextBoxColumn.Name = "pNameDataGridViewTextBoxColumn";
+            // 
+            // quanityDataGridViewTextBoxColumn
+            // 
+            this.quanityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quanityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quanityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quanityDataGridViewTextBoxColumn.Name = "quanityDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             // 
             // StorageForm
             // 

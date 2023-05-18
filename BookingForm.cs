@@ -34,15 +34,15 @@ namespace MultiFaceRec
             //Load giá phòng và số người ở phòng để so sánh
             DataTable table = new DataTable();
             table = book.GetRoomByID(Roomid);
-            txb_Price.Text = table.Rows[0]["Price"].ToString();
-            numberofpeople = Convert.ToInt32(table.Rows[0]["Capacity"]);
+            txb_Price.Text = table.Rows[0]["price"].ToString();
+            numberofpeople = Convert.ToInt32(table.Rows[0]["capacity"]);
             #endregion
 
             #region Ordering Service
             //Load Combobox
             Cbb_Service.DataSource = storage.GetAllProduct();
-            Cbb_Service.DisplayMember = "Pname";
-            Cbb_Service.ValueMember = "PID";
+            Cbb_Service.DisplayMember = "pname";
+            Cbb_Service.ValueMember = "Pid";
             //datagridvew
             datagridview1.DataSource = order.GetOrderByID(Roomid);
             #endregion
@@ -226,7 +226,17 @@ namespace MultiFaceRec
             }
         }
 
-        private void bt_Book_Click_1(object sender, EventArgs e)
+   
+        private void dtp_Arrival_ValueChanged(object sender, EventArgs e)
+        {
+            if(dtp_Arrival.Value <= DateTime.Now.Date)
+            {
+                MessageBox.Show("Arrival Day Must Start From Today!", "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtp_Arrival.Value = DateTime.Now.Date;
+            }    
+        }
+
+        private void bt_Book_Click(object sender, EventArgs e)
         {
             try
             {
@@ -256,9 +266,11 @@ namespace MultiFaceRec
                         else
                         {
                             int status = 1;
+                            //insert(int RID, string gname, string phone,int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
                             if (book.insert(RID, Gname, Phone, people, arr, leave, price, status))
                             {
                                 MessageBox.Show("Booking Room Sucessfully!", "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                
                                 Close();
                             }
                             else
@@ -273,16 +285,6 @@ namespace MultiFaceRec
             {
                 MessageBox.Show("Error: " + ex.Message, "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void dtp_Arrival_ValueChanged(object sender, EventArgs e)
-        {
-            if(dtp_Arrival.Value <= DateTime.Now.Date)
-            {
-                MessageBox.Show("Arrival Day Must Start From Today!", "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dtp_Arrival.Value = DateTime.Now.Date;
-            }    
         }
     }
 }

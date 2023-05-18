@@ -41,7 +41,7 @@ namespace MultiFaceRec
                 }
                 dl.addShiftToSql(shift);
             }
-            ShiftForm_Load(null, null);
+         //   ShiftForm_Load(null, null);
         }
     }
 }

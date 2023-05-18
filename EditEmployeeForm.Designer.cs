@@ -178,6 +178,7 @@ namespace MultiFaceRec
             this.bt_UploadImage.TabIndex = 93;
             this.bt_UploadImage.Text = "Upload ";
             this.bt_UploadImage.UseVisualStyleBackColor = false;
+            this.bt_UploadImage.Click += new System.EventHandler(this.bt_UploadImage_Click);
             // 
             // bt_Cancel
             // 
@@ -190,6 +191,7 @@ namespace MultiFaceRec
             this.bt_Cancel.TabIndex = 95;
             this.bt_Cancel.Text = "Cancel";
             this.bt_Cancel.UseVisualStyleBackColor = false;
+            this.bt_Cancel.Click += new System.EventHandler(this.bt_Cancel_Click);
             // 
             // bt_Edit
             // 
@@ -202,6 +204,7 @@ namespace MultiFaceRec
             this.bt_Edit.TabIndex = 94;
             this.bt_Edit.Text = "Edit";
             this.bt_Edit.UseVisualStyleBackColor = false;
+            this.bt_Edit.Click += new System.EventHandler(this.bt_Edit_Click);
             // 
             // tb_ID
             // 

@@ -9,7 +9,8 @@ namespace MultiFaceRec
 {
     class MY_DB
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-BAEEIK2L\SQLEXPRESS;Initial Catalog=Hotel;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        //LAPTOP-L5HNLU56 --> laptop cua Khoa
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-L5HNLU56\SQLEXPRESS;Initial Catalog=Hotel;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
         public SqlConnection getConnection
         {

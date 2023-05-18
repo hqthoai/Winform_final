@@ -27,7 +27,8 @@ namespace MultiFaceRec
                                                  " Where Rid = @id", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = RID;
             command.Parameters.Add("@gn", SqlDbType.NVarChar).Value = gname;
-            command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = phone;
+            //command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = phone;
+            command.Parameters.Add("@pn", SqlDbType.VarChar).Value = phone;    // khoa chinh
             command.Parameters.Add("@peo", SqlDbType.Int).Value = pupil;
             command.Parameters.Add("@arr", SqlDbType.Date).Value = Arrrival;
             command.Parameters.Add("@lea", SqlDbType.Date).Value = Leave;
@@ -49,8 +50,9 @@ namespace MultiFaceRec
         public bool update(int RID, string gname, string phone, int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
         {
 
-            SqlCommand command = new SqlCommand("Update Booking SET gname = @new , phone=@pn , pupil = @peo , arrival = @arr , leave= @lea , price = @pr , status = @sta " +
+            SqlCommand command = new SqlCommand("Update Booking SET gname = @new, phone=@pn, pupil = @peo, arrival = @arr, leave= @lea , price = @pr , status = @sta " +
                                                  " Where Rid = @id", mydb.getConnection);
+
             command.Parameters.Add("@new", SqlDbType.NVarChar).Value = gname;
             command.Parameters.Add("@peo", SqlDbType.Int).Value = pupil;
             command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = phone;
@@ -77,7 +79,7 @@ namespace MultiFaceRec
         public DataTable GetBookingByID(int RoomID)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Booking WHERE Rid = @rid ", mydb.getConnection);
-            command.Parameters.Add("rid", SqlDbType.Int).Value = RoomID;
+            command.Parameters.Add("@rid", SqlDbType.Int).Value = RoomID;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

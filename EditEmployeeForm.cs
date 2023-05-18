@@ -20,68 +20,8 @@ namespace MultiFaceRec
             InitializeComponent();
         }
 
-        private void bt_Edit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Verif())
-                {
-                    int eID = Convert.ToInt32(tb_ID.Text);
-
-                    string phone = tb_Phone.Text;
-                    string email = tb_Email.Text;
-                    string adrs = tb_Address.Text;
-
-                    MemoryStream pic = new MemoryStream();
-                    pb_PictureImage.Image.Save(pic, pb_PictureImage.Image.RawFormat);
-                    string username = tb_UserName.Text;
-                    string password = tb_Password.Text;
-
-
-                    //EID, fname, lname, bdate, gender, phone, email, adrs, RoleID, pic, username, password
-                    //public bool UpdateInfor(int EID, string phone, string email, string addr, string uname, string pass, MemoryStream pic)
-                    {
-                        if (employee.UpdateInfor(eID, phone, email, adrs, username, password, pic))
-                        {
-                            MessageBox.Show("Edit Successfully!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error Accours While Editing Employee!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Empty Field!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
-
-        private void bt_Cancel_Click(object sender, EventArgs e)
-        {
-            DialogResult res = MessageBox.Show("Are You Sure. Click 'Yes' To Exit this Form!", "Edit User", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (res == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
-
-        private void bt_UploadImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Image(*.jpg;*.png;*gif)|*.jpg;*.pngl*.gif";
-            if ((opf.ShowDialog() == DialogResult.OK))
-            {
-                pb_PictureImage.Image = Image.FromFile(opf.FileName);
-            }
-        }
+     
+      
 
 
 
@@ -128,6 +68,69 @@ namespace MultiFaceRec
 
             tb_ID.ReadOnly = true;
             tb_UserName.ReadOnly = true;
+        }
+
+        private void bt_UploadImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*gif)|*.jpg;*.pngl*.gif";
+            if ((opf.ShowDialog() == DialogResult.OK))
+            {
+                pb_PictureImage.Image = Image.FromFile(opf.FileName);
+            }
+        }
+
+        private void bt_Cancel_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are You Sure. Click 'Yes' To Exit this Form!", "Edit User", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void bt_Edit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Verif())
+                {
+                    int eID = Convert.ToInt32(tb_ID.Text);
+
+                    string phone = tb_Phone.Text;
+                    string email = tb_Email.Text;
+                    string adrs = tb_Address.Text;
+
+                    MemoryStream pic = new MemoryStream();
+                    pb_PictureImage.Image.Save(pic, pb_PictureImage.Image.RawFormat);
+                    string username = tb_UserName.Text;
+                    string password = tb_Password.Text;
+
+
+                    //EID, fname, lname, bdate, gender, phone, email, adrs, RoleID, pic, username, password
+                    //public bool UpdateInfor(int EID, string phone, string email, string addr, string uname, string pass, MemoryStream pic)
+                    {
+                        if (employee.UpdateInfor(eID, phone, email, adrs, username, password, pic))
+                        {
+                            MessageBox.Show("Edit Successfully!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error Accours While Editing Employee!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empty Field!", "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Edit Employee", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

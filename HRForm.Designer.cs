@@ -144,7 +144,8 @@ namespace MultiFaceRec
             // tb_Search
             // 
             this.tb_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Search.Location = new System.Drawing.Point(744, 50);
+            this.tb_Search.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.tb_Search.Location = new System.Drawing.Point(783, 47);
             this.tb_Search.Name = "tb_Search";
             this.tb_Search.Size = new System.Drawing.Size(308, 30);
             this.tb_Search.TabIndex = 0;
@@ -154,8 +155,8 @@ namespace MultiFaceRec
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(489, 55);
+            this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label9.Location = new System.Drawing.Point(489, 53);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(249, 25);
             this.label9.TabIndex = 89;

@@ -23,8 +23,20 @@ namespace MultiFaceRec
             Close();
         }
         MY_DB db = new MY_DB();
-        private void bt_Login_Click(object sender, EventArgs e)
+       
+        private void lb_Register_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
             //MANAGER
             if (rdb_Manager.Checked == true)
             {
@@ -183,17 +195,12 @@ namespace MultiFaceRec
             }
         }
 
-        private void lb_Register_Click(object sender, EventArgs e)
+        private void btn_Cancel_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

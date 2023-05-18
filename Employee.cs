@@ -17,7 +17,8 @@ namespace MultiFaceRec
             SqlCommand command = new SqlCommand("INSERT INTO Employee (eid, fname, lname, bdate, gender, phone, address, pic, roleID, username, password, gmail )" +
                                                              " VALUES (@id, @fn, @ln, @bdt,@gdr,@phn,@adrs,@pic, @rID, @uname, @pwd, @gm)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = EID;
-            command.Parameters.Add("@fn", SqlDbType.VarChar).Value = fname;
+            //command.Parameters.Add("@fn", SqlDbType.VarChar).Value = fname;
+            command.Parameters.Add("@fn", SqlDbType.NVarChar).Value = fname;    // khoa chinh
             command.Parameters.Add("@ln", SqlDbType.NVarChar).Value = lname;
             command.Parameters.Add("@bdt", SqlDbType.Date).Value = bDate;
             command.Parameters.Add("@gdr", SqlDbType.VarChar).Value = gender;
@@ -146,7 +147,8 @@ namespace MultiFaceRec
         //Dùng ID để kiếm Employee
         public DataTable GetEmployeeByID(int GlobalEID_ID)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Employee Where Eid = @EID", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("SELECT * FROM Employee Where Eid = @EID", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM Employee Where eid = @EID", mydb.getConnection);     // khoa chinh
             command.Parameters.Add("@EID", SqlDbType.Int).Value = GlobalEID_ID;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -221,7 +223,8 @@ namespace MultiFaceRec
         }
         public DataTable GetManager()
         {
-            SqlCommand command = new SqlCommand("select * from employee where roleid = 1 ", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("select * from employee where roleid = 1 ", mydb.getConnection);
+            SqlCommand command = new SqlCommand("select * from Employee where roleID = 1 ", mydb.getConnection);    // khoa chinh
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -230,7 +233,8 @@ namespace MultiFaceRec
         }
         public DataTable GetRecept()
         {
-            SqlCommand command = new SqlCommand("select * from employee where roleid = 2", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("select * from employee where roleid = 2", mydb.getConnection);
+            SqlCommand command = new SqlCommand("select * from Employee where roleID = 2", mydb.getConnection);     // khoa chinh
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -239,7 +243,8 @@ namespace MultiFaceRec
         }
         public DataTable GetLabour()
         {
-            SqlCommand command = new SqlCommand("select * from employee where roleid = 3 ", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("select * from employee where roleid = 3 ", mydb.getConnection);/
+            SqlCommand command = new SqlCommand("select * from Employee where roleID = 3 ", mydb.getConnection);
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -248,7 +253,8 @@ namespace MultiFaceRec
         }
         public DataTable SearchEmployee(string SearchText)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM employee WHERE CONCAT(fname, lname) LIKE '%" + SearchText + "%'", mydb.getConnection);
+            //SqlCommand command = new SqlCommand("SELECT * FROM employee WHERE CONCAT(fname, lname, username, roleID) LIKE '%" + SearchText + "%'", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT * FROM Employee WHERE CONCAT(fname, lname, username, roleID) LIKE '%" + SearchText + "%'", mydb.getConnection);     // khoa chinh
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

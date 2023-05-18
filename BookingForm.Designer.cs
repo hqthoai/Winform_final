@@ -113,7 +113,7 @@ namespace MultiFaceRec
             this.bt_Book.TabIndex = 158;
             this.bt_Book.Text = "Book";
             this.bt_Book.UseVisualStyleBackColor = false;
-            this.bt_Book.Click += new System.EventHandler(this.bt_Book_Click_1);
+            this.bt_Book.Click += new System.EventHandler(this.bt_Book_Click);
             // 
             // label1
             // 

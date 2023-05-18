@@ -33,32 +33,35 @@ namespace MultiFaceRec
             this.rbt_Labour = new System.Windows.Forms.RadioButton();
             this.rbt_Receptionist = new System.Windows.Forms.RadioButton();
             this.rdb_Manager = new System.Windows.Forms.RadioButton();
-            this.TextBoxPassword = new System.Windows.Forms.TextBox();
-            this.TextBoxUsername = new System.Windows.Forms.TextBox();
-            this.bt_Login = new System.Windows.Forms.Button();
-            this.bt_Cancel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_Login = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Cancel = new Guna.UI2.WinForms.Guna2Button();
+            this.TextBoxUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbt_Labour);
             this.panel1.Controls.Add(this.rbt_Receptionist);
             this.panel1.Controls.Add(this.rdb_Manager);
             this.panel1.ForeColor = System.Drawing.Color.Teal;
-            this.panel1.Location = new System.Drawing.Point(168, 335);
+            this.panel1.Location = new System.Drawing.Point(164, 505);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 52);
             this.panel1.TabIndex = 23;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // rbt_Labour
             // 
             this.rbt_Labour.AutoSize = true;
             this.rbt_Labour.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbt_Labour.ForeColor = System.Drawing.Color.DodgerBlue;
             this.rbt_Labour.Location = new System.Drawing.Point(349, 15);
             this.rbt_Labour.Name = "rbt_Labour";
             this.rbt_Labour.Size = new System.Drawing.Size(88, 24);
@@ -71,6 +74,7 @@ namespace MultiFaceRec
             // 
             this.rbt_Receptionist.AutoSize = true;
             this.rbt_Receptionist.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbt_Receptionist.ForeColor = System.Drawing.Color.DodgerBlue;
             this.rbt_Receptionist.Location = new System.Drawing.Point(181, 15);
             this.rbt_Receptionist.Name = "rbt_Receptionist";
             this.rbt_Receptionist.Size = new System.Drawing.Size(135, 24);
@@ -83,6 +87,7 @@ namespace MultiFaceRec
             // 
             this.rdb_Manager.AutoSize = true;
             this.rdb_Manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdb_Manager.ForeColor = System.Drawing.Color.DodgerBlue;
             this.rdb_Manager.Location = new System.Drawing.Point(48, 15);
             this.rdb_Manager.Name = "rdb_Manager";
             this.rdb_Manager.Size = new System.Drawing.Size(102, 24);
@@ -91,58 +96,12 @@ namespace MultiFaceRec
             this.rdb_Manager.Text = "Manager";
             this.rdb_Manager.UseVisualStyleBackColor = true;
             // 
-            // TextBoxPassword
-            // 
-            this.TextBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPassword.Location = new System.Drawing.Point(369, 228);
-            this.TextBoxPassword.Name = "TextBoxPassword";
-            this.TextBoxPassword.PasswordChar = 'k';
-            this.TextBoxPassword.Size = new System.Drawing.Size(263, 34);
-            this.TextBoxPassword.TabIndex = 16;
-            // 
-            // TextBoxUsername
-            // 
-            this.TextBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxUsername.Location = new System.Drawing.Point(369, 132);
-            this.TextBoxUsername.Name = "TextBoxUsername";
-            this.TextBoxUsername.Size = new System.Drawing.Size(263, 34);
-            this.TextBoxUsername.TabIndex = 14;
-            // 
-            // bt_Login
-            // 
-            this.bt_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_Login.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Login.ForeColor = System.Drawing.Color.White;
-            this.bt_Login.Location = new System.Drawing.Point(269, 435);
-            this.bt_Login.Name = "bt_Login";
-            this.bt_Login.Size = new System.Drawing.Size(100, 43);
-            this.bt_Login.TabIndex = 18;
-            this.bt_Login.Text = "Login";
-            this.bt_Login.UseVisualStyleBackColor = false;
-            this.bt_Login.Click += new System.EventHandler(this.bt_Login_Click);
-            // 
-            // bt_Cancel
-            // 
-            this.bt_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_Cancel.CausesValidation = false;
-            this.bt_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bt_Cancel.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Cancel.ForeColor = System.Drawing.Color.White;
-            this.bt_Cancel.Location = new System.Drawing.Point(402, 437);
-            this.bt_Cancel.Name = "bt_Cancel";
-            this.bt_Cancel.Size = new System.Drawing.Size(100, 42);
-            this.bt_Cancel.TabIndex = 19;
-            this.bt_Cancel.Text = "Cancel";
-            this.bt_Cancel.UseVisualStyleBackColor = false;
-            this.bt_Cancel.Click += new System.EventHandler(this.bt_Cancel_Click);
-            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(211, 231);
+            this.label3.ForeColor = System.Drawing.Color.Brown;
+            this.label3.Location = new System.Drawing.Point(159, 454);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 28);
             this.label3.TabIndex = 17;
@@ -152,12 +111,123 @@ namespace MultiFaceRec
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(127, 132);
+            this.label2.ForeColor = System.Drawing.Color.Brown;
+            this.label2.Location = new System.Drawing.Point(159, 388);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 29);
+            this.label2.Size = new System.Drawing.Size(133, 38);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Username / Gmail:";
+            this.label2.Text = "Username:";
+            // 
+            // btn_Login
+            // 
+            this.btn_Login.BorderRadius = 20;
+            this.btn_Login.BorderThickness = 1;
+            this.btn_Login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Login.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Login.Location = new System.Drawing.Point(182, 575);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(180, 45);
+            this.btn_Login.TabIndex = 24;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // btn_Cancel
+            // 
+            this.btn_Cancel.BorderRadius = 20;
+            this.btn_Cancel.BorderThickness = 1;
+            this.btn_Cancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Cancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Cancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Cancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Cancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Cancel.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Cancel.Location = new System.Drawing.Point(471, 575);
+            this.btn_Cancel.Name = "btn_Cancel";
+            this.btn_Cancel.PressedColor = System.Drawing.Color.Transparent;
+            this.btn_Cancel.Size = new System.Drawing.Size(180, 45);
+            this.btn_Cancel.TabIndex = 25;
+            this.btn_Cancel.Text = "Cancel";
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
+            // 
+            // TextBoxUsername
+            // 
+            this.TextBoxUsername.BorderRadius = 20;
+            this.TextBoxUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxUsername.DefaultText = "";
+            this.TextBoxUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxUsername.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.TextBoxUsername.ForeColor = System.Drawing.Color.Blue;
+            this.TextBoxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxUsername.Location = new System.Drawing.Point(347, 378);
+            this.TextBoxUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxUsername.Name = "TextBoxUsername";
+            this.TextBoxUsername.PasswordChar = '\0';
+            this.TextBoxUsername.PlaceholderForeColor = System.Drawing.Color.Lime;
+            this.TextBoxUsername.PlaceholderText = "UserName/Gmail";
+            this.TextBoxUsername.SelectedText = "";
+            this.TextBoxUsername.Size = new System.Drawing.Size(229, 48);
+            this.TextBoxUsername.TabIndex = 26;
+            this.TextBoxUsername.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
+            // TextBoxPassword
+            // 
+            this.TextBoxPassword.BorderRadius = 20;
+            this.TextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxPassword.DefaultText = "";
+            this.TextBoxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxPassword.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxPassword.ForeColor = System.Drawing.Color.Blue;
+            this.TextBoxPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxPassword.Location = new System.Drawing.Point(347, 434);
+            this.TextBoxPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TextBoxPassword.Name = "TextBoxPassword";
+            this.TextBoxPassword.PasswordChar = '*';
+            this.TextBoxPassword.PlaceholderForeColor = System.Drawing.Color.Lime;
+            this.TextBoxPassword.PlaceholderText = "Password";
+            this.TextBoxPassword.SelectedText = "";
+            this.TextBoxPassword.Size = new System.Drawing.Size(229, 48);
+            this.TextBoxPassword.TabIndex = 27;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel1.Controls.Add(this.TextBoxPassword);
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.TextBoxUsername);
+            this.guna2Panel1.Controls.Add(this.btn_Cancel);
+            this.guna2Panel1.Controls.Add(this.panel1);
+            this.guna2Panel1.Controls.Add(this.label3);
+            this.guna2Panel1.Controls.Add(this.btn_Login);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Location = new System.Drawing.Point(132, 58);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(747, 699);
+            this.guna2Panel1.TabIndex = 28;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackgroundImage = global::MultiFaceRec.Properties.Resources._7;
+            this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(747, 308);
+            this.guna2Panel2.TabIndex = 0;
             // 
             // LoginForm
             // 
@@ -165,34 +235,32 @@ namespace MultiFaceRec
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MultiFaceRec.Properties.Resources._7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(823, 582);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.TextBoxPassword);
-            this.Controls.Add(this.TextBoxUsername);
-            this.Controls.Add(this.bt_Login);
-            this.Controls.Add(this.bt_Cancel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1138, 788);
+            this.Controls.Add(this.guna2Panel1);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rbt_Receptionist;
         private System.Windows.Forms.RadioButton rdb_Manager;
-        private System.Windows.Forms.TextBox TextBoxPassword;
-        private System.Windows.Forms.TextBox TextBoxUsername;
-        private System.Windows.Forms.Button bt_Login;
-        private System.Windows.Forms.Button bt_Cancel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbt_Labour;
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2Button btn_Login;
+        private Guna.UI2.WinForms.Guna2Button btn_Cancel;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxUsername;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxPassword;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

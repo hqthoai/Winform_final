@@ -19,7 +19,10 @@ namespace MultiFaceRec
         Storage storage = new Storage();
         private void StorageForm_Load(object sender, EventArgs e)
         {
+            // Hiển thị tất cả các sản phẩm lên DataGridView
             dataGridView1.DataSource = storage.GetAllProduct();
+
+            // Thiết lập chiều cao của mỗi hàng trong DataGridView là 60 pixel
             dataGridView1.RowTemplate.Height = 60;
         }
 
@@ -31,13 +34,38 @@ namespace MultiFaceRec
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            tb_PID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            tb_Name.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            numericUpDown1.Value = Convert.ToInt32(dataGridView1.CurrentRow.Cells[2].Value.ToString());
-            CultureInfo culture = new CultureInfo("vi-VN");
-            int price = Convert.ToInt32(dataGridView1.CurrentRow.Cells[3].Value.ToString());
-            //tb_Price.Text = price.ToString("c", culture);
-            tb_Price.Text = price.ToString();
+            //tb_PID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //tb_Name.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //numericUpDown1.Value = Convert.ToInt32(dataGridView1.CurrentRow.Cells[2].Value.ToString());
+            //CultureInfo culture = new CultureInfo("vi-VN");
+            //int price = Convert.ToInt32(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+
+            //tb_Price.Text = price.ToString();
+
+            if (dataGridView1.CurrentRow != null)
+            {
+                tb_PID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                tb_Name.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+                // Check if the cell value is null before accessing its property
+                if (dataGridView1.CurrentRow.Cells[3].Value != null)
+                {
+                    CultureInfo culture = new CultureInfo("vi-VN");
+                    tb_Price.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                }
+
+                // Check if the cell value is null before trying to convert it to an integer
+                if (dataGridView1.CurrentRow.Cells[2].Value != null)
+                {
+                    string quantityString = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    int quantity = 0;
+                    bool isNumeric = int.TryParse(quantityString, out quantity);
+                    if (isNumeric)
+                    {
+                        numericUpDown1.Value = quantity;
+                    }
+                }
+            }
         }
 
         private void bt_Add_Click(object sender, EventArgs e)

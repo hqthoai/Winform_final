@@ -127,3 +127,25 @@ D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\Hotel.csproj.CopyC
 D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.exe
 D:\VisualStudio2022\filecode\c##\WinFormEndTerm\obj\x86\Debug\MultiFaceRec.pdb
 D:\VisualStudio2022\filecode\c##\WinFormEndTerm\bin\Debug\MultiFaceRec.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\bin\Debug\MultiFaceRec.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\bin\Debug\MultiFaceRec.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\bin\Debug\MultiFaceRec.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\Hotel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.HRForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.MainForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\Hotel.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\bin\Debug\Guna.UI2.dll
