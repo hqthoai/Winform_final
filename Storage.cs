@@ -16,7 +16,7 @@ namespace MultiFaceRec
             //                                                 " VALUES (@id, @pn, @qn, @pr)", mydb.getConnection);
 
 
-            SqlCommand command = new SqlCommand("INSERT INTO Storage (Pid, pname, quantity, price)" +
+            SqlCommand command = new SqlCommand("INSERT INTO Storage (Pid, pname, quanity, price)" +
                                                              " VALUES (@id, @pn, @qn, @pr)", mydb.getConnection);   // khoa chinh
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = Pname;
@@ -38,7 +38,7 @@ namespace MultiFaceRec
         }
         public bool Update(int Pid, string Pname, int quanity, int price)
         {
-            SqlCommand command = new SqlCommand("UPDATE Storage SET pname = @pn, quantity = @qn, price = @pr" +
+            SqlCommand command = new SqlCommand("UPDATE Storage SET pname = @pn, quanity = @qn, price = @pr" +
                                                              " WHERE Pid = @id", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = Pname;
@@ -60,7 +60,7 @@ namespace MultiFaceRec
         public bool UpdateStorage(int Pid, int quanity)
         {
             //SqlCommand command = new SqlCommand("UPDATE Storage SET  quanity = @qn" + " WHERE Pid = @id", mydb.getConnection);
-            SqlCommand command = new SqlCommand("UPDATE Storage SET  quantity = @qn" + " WHERE Pid = @id", mydb.getConnection); // khoa chinh
+            SqlCommand command = new SqlCommand("UPDATE Storage SET  quanity = @qn" + " WHERE Pid = @id", mydb.getConnection); // khoa chinh
             command.Parameters.Add("@id", SqlDbType.Int).Value = Pid;
             command.Parameters.Add("@qn", SqlDbType.Int).Value = quanity;
             mydb.openConnection();
@@ -158,7 +158,7 @@ namespace MultiFaceRec
         public DataTable StatictisTable()
         {
             //SqlCommand command = new SqlCommand("select Pname, quanity, pid from storage", mydb.getConnection);
-            SqlCommand command = new SqlCommand("select pname, quantity, Pid from Storage", mydb.getConnection); // khoa chinh
+            SqlCommand command = new SqlCommand("select pname, quanity, Pid from Storage", mydb.getConnection); // khoa chinh
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

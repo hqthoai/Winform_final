@@ -149,3 +149,25 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.exe
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\obj\x86\Debug\MultiFaceRec.pdb
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\WinFormEndTerm\Winform_final\bin\Debug\Guna.UI2.dll
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\bin\Debug\MultiFaceRec.exe.config
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\bin\Debug\MultiFaceRec.exe
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\bin\Debug\MultiFaceRec.pdb
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\bin\Debug\Guna.UI2.dll
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.AssemblyReference.cache
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.BookingForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.CheckAttendanceForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.HRForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.LoginForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.MainForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.ShiftForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.StorageForm.resources
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.GenerateResource.cache
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.CoreCompileInputs.cache
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\Hotel.csproj.CopyComplete
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.exe
+D:\VisualStudio2022\filecode\winformcuoiki\Winform_final\obj\x86\Debug\MultiFaceRec.pdb

@@ -107,6 +107,9 @@
       <DependentUpon>CheckAttedanceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeDataSet.cs">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +122,9 @@
       <DependentUpon>EShiftForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="hotelManagementDataSet.cs">
+      <DependentUpon>hotelManagementDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="hotelManagementDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

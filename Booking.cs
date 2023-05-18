@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Remoting.Lifetime;
+using System.Security.Cryptography;
 using System.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace MultiFaceRec
 {
@@ -13,7 +18,7 @@ namespace MultiFaceRec
         public DataTable GetRoomByID(int RoomID)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Room WHERE Rid = @rid ", mydb.getConnection);
-            command.Parameters.Add("rid", SqlDbType.Int).Value = RoomID;
+            command.Parameters.Add("@rid", SqlDbType.Int).Value = RoomID;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -23,8 +28,7 @@ namespace MultiFaceRec
         public bool insert(int RID, string gname, string phone,int pupil, DateTime Arrrival, DateTime Leave, int price, int status)
         {
 
-            SqlCommand command = new SqlCommand("Update Booking SET gname = @gn, phone=@pn, pupil = @peo, arrival = @arr, leave= @lea, price = @pr, status = @sta" +
-                                                 " Where Rid = @id", mydb.getConnection);
+            SqlCommand command = new SqlCommand("insert into Booking values (@id, @gn, @pn, @peo, @arr,  @lea, @pr, @sta)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = RID;
             command.Parameters.Add("@gn", SqlDbType.NVarChar).Value = gname;
             //command.Parameters.Add("@pn", SqlDbType.NVarChar).Value = phone;
@@ -75,6 +79,24 @@ namespace MultiFaceRec
             }
         }
 
+        public bool delete(int RID)
+        {
+            SqlCommand command = new SqlCommand("delete from Booking where Rid = @id", mydb.getConnection);
+
+            command.Parameters.Add("@id", SqlDbType.Int).Value = RID;
+
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
         //Select all booking
         public DataTable GetBookingByID(int RoomID)
         {

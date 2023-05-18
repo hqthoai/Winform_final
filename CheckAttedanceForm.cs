@@ -146,32 +146,32 @@ namespace MultiFaceRec
         string a, b;
         public CheckAttendanceForm()
         {
-            InitializeComponent();
-            //Load haarcascades for face detection
-            face = new HaarCascade("haarcascade_frontalface_default.xml");
-            //eye = new HaarCascade("haarcascade_eye.xml");
-            try
-            {
-                //Load of previus trainned faces and labels for each image
-                string Labelsinfo = File.ReadAllText(Application.StartupPath + "/TrainedFaces/TrainedLabels.txt");
-                string[] Labels = Labelsinfo.Split('%');
-                NumLabels = Convert.ToInt16(Labels[0]);
-                ContTrain = NumLabels;
-                string LoadFaces;
+            //InitializeComponent();
+            ////Load haarcascades for face detection
+            //face = new HaarCascade("haarcascade_frontalface_default.xml");
+            ////eye = new HaarCascade("haarcascade_eye.xml");
+            //try
+            //{
+            //    //Load of previus trainned faces and labels for each image
+            //    string Labelsinfo = File.ReadAllText(Application.StartupPath + "/TrainedFaces/TrainedLabels.txt");
+            //    string[] Labels = Labelsinfo.Split('%');
+            //    NumLabels = Convert.ToInt16(Labels[0]);
+            //    ContTrain = NumLabels;
+            //    string LoadFaces;
 
-                for (int tf = 1; tf < NumLabels + 1; tf++)
-                {
-                    LoadFaces = "face" + tf + ".bmp";
-                    trainingImages.Add(new Image<Gray, byte>(Application.StartupPath + "/TrainedFaces/" + LoadFaces));
-                    labels.Add(Labels[tf]);
-                }
+            //    for (int tf = 1; tf < NumLabels + 1; tf++)
+            //    {
+            //        LoadFaces = "face" + tf + ".bmp";
+            //        trainingImages.Add(new Image<Gray, byte>(Application.StartupPath + "/TrainedFaces/" + LoadFaces));
+            //        labels.Add(Labels[tf]);
+            //    }
 
-            }
-            catch (Exception e)
-            {
-                //MessageBox.Show(e.ToString());
-                //MessageBox.Show("Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).", "Triained faces load", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    //MessageBox.Show(e.ToString());
+            //    //MessageBox.Show("Nothing in binary database, please add at least a face(Simply train the prototype with the Add Face Button).", "Triained faces load", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //}
 
         }
         void FrameGrabber(object sender, EventArgs e)

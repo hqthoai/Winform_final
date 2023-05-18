@@ -266,6 +266,7 @@ namespace MultiFaceRec
             // bt_CheckOut6
             // 
             this.bt_CheckOut6.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut6.Enabled = false;
             this.bt_CheckOut6.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut6.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut6.Location = new System.Drawing.Point(184, 341);
@@ -474,6 +475,7 @@ namespace MultiFaceRec
             // bt_CheckOut5
             // 
             this.bt_CheckOut5.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut5.Enabled = false;
             this.bt_CheckOut5.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut5.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut5.Location = new System.Drawing.Point(177, 341);
@@ -682,6 +684,7 @@ namespace MultiFaceRec
             // bt_CheckOut4
             // 
             this.bt_CheckOut4.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut4.Enabled = false;
             this.bt_CheckOut4.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut4.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut4.Location = new System.Drawing.Point(183, 341);
@@ -1098,6 +1101,7 @@ namespace MultiFaceRec
             // bt_CheckOut2
             // 
             this.bt_CheckOut2.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut2.Enabled = false;
             this.bt_CheckOut2.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut2.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut2.Location = new System.Drawing.Point(173, 341);
@@ -1286,6 +1290,7 @@ namespace MultiFaceRec
             // bt_CheckOut1
             // 
             this.bt_CheckOut1.BackColor = System.Drawing.Color.LightBlue;
+            this.bt_CheckOut1.Enabled = false;
             this.bt_CheckOut1.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CheckOut1.Location = new System.Drawing.Point(188, 341);
