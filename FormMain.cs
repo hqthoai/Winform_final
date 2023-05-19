@@ -22,7 +22,7 @@ namespace MultiFaceRec
 
         private void bt_HumanResource_Click(object sender, EventArgs e)
         {
-            FormHRManagement HRF = new FormHRManagement();
+            lbl_Close HRF = new lbl_Close();
             HRF.Show();
         }
 
@@ -129,6 +129,16 @@ namespace MultiFaceRec
             lb_FnameLname.Text = (table.Rows[0]["fname"].ToString() + " " + table.Rows[0]["lname"].ToString());
 
             #endregion
+        }
+
+        private void lbl_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lbl_Exit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

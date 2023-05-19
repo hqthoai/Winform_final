@@ -20,7 +20,8 @@ namespace MultiFaceRec
 
         private void ShiftForm_Load(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM [Shift]", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT  Id as 'Employee ID', Position as 'Employee Role', Monday, Tuesday, " +
+                " Wednesday, Thursday, Friday, Saturday, Sunday FROM [Shift]", mydb.getConnection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -41,7 +42,7 @@ namespace MultiFaceRec
                 }
                 dl.addShiftToSql(shift);
             }
-         //   ShiftForm_Load(null, null);
+            ShiftForm_Load(null, null);
         }
     }
 }

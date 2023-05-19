@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace MultiFaceRec
 {
-    public partial class FormHRManagement : Form
+    public partial class lbl_Close : Form
     {
         Employee employee = new Employee();
         internal LoginForm loginForm;
 
-        public FormHRManagement()
+        public lbl_Close()
         {
             InitializeComponent();
         }
@@ -35,20 +35,20 @@ namespace MultiFaceRec
         private void bt_Refresh_Click(object sender, EventArgs e)
         {
             //DataGridView
-            dataGridView1.DataSource = employee.GetAllEmployee();
-            dataGridView1.RowTemplate.Height = 60;
+            dataGridView.DataSource = employee.GetAllEmployee();
+            dataGridView.RowTemplate.Height = 60;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
+            picCol = (DataGridViewImageColumn)dataGridView.Columns[7];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
             CleanFields();
         }
@@ -231,61 +231,61 @@ namespace MultiFaceRec
 
         private void bt_Manager_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = employee.GetManager();
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.DataSource = employee.GetManager();
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
         }
 
         private void bt_Receptionist_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = employee.GetRecept();
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.DataSource = employee.GetRecept();
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
         }
 
         private void bt_Labourer_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = employee.GetLabour();
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.DataSource = employee.GetLabour();
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = employee.SearchEmployee(tb_Search.Text);
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.DataSource = employee.SearchEmployee(tb_Search.Text);
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
         }
 
@@ -350,21 +350,22 @@ namespace MultiFaceRec
 
         private void FormHRManagement_Load(object sender, EventArgs e)
         {
+
             //DataGridView
-            dataGridView1.DataSource = employee.GetAllEmployee();
-            dataGridView1.RowTemplate.Height = 60;
+            dataGridView.DataSource = employee.GetAllEmployee();
+            dataGridView.RowTemplate.Height = 60;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            picCol = (DataGridViewImageColumn)dataGridView1.Columns[7];
+            picCol = (DataGridViewImageColumn)dataGridView.Columns[7];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dataGridView1.ClearSelection();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            dataGridView.ClearSelection();
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
             {
                 if (i % 2 != 0)
                 {
-                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.WhiteSmoke;
                 }
             }
-            int totale = Convert.ToInt32(dataGridView1.Rows.Count);
+            int totale = Convert.ToInt32(dataGridView.Rows.Count);
             lb_Total.Text = ("Total: " + totale);
 
             //ComboBox
@@ -377,13 +378,13 @@ namespace MultiFaceRec
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             ////Thứ Tự các cột: id - fname - lname - bd - gdr - phn - adrs -roleid -gmail- username - passwod  pic
-            tb_EID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            tb_FirstName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            tb_LastName.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            dt_Birthday.Value = (DateTime)dataGridView1.CurrentRow.Cells[3].Value;
+            tb_EID.Text = dataGridView.CurrentRow.Cells[0].Value.ToString();
+            tb_FirstName.Text = dataGridView.CurrentRow.Cells[1].Value.ToString();
+            tb_LastName.Text = dataGridView.CurrentRow.Cells[2].Value.ToString();
+            dt_Birthday.Value = (DateTime)dataGridView.CurrentRow.Cells[3].Value;
 
             // Gender
-            if ((dataGridView1.CurrentRow.Cells[4].Value.ToString() == "Female"))
+            if ((dataGridView.CurrentRow.Cells[4].Value.ToString() == "Female"))
             {
                 RadioButtonFemale.Checked = true;
                 RadioButtonMale.Checked = false;
@@ -394,18 +395,18 @@ namespace MultiFaceRec
                 RadioButtonFemale.Checked = false;
             }
 
-            tb_Phone.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            tb_Address.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[8].Value.ToString());
+            tb_Phone.Text = dataGridView.CurrentRow.Cells[5].Value.ToString();
+            tb_Address.Text = dataGridView.CurrentRow.Cells[6].Value.ToString();
+            int c = Convert.ToInt32(dataGridView.CurrentRow.Cells[8].Value.ToString());
             comboBox1.Text = c.ToString();
             byte[] pic;
-            pic = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
+            pic = (byte[])dataGridView.CurrentRow.Cells[7].Value;
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(pic));
             pb_PictureImage.Image = x;
 
-            tb_Email.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            tb_UserName.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            tb_Password.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            tb_Email.Text = dataGridView.CurrentRow.Cells[11].Value.ToString();
+            tb_UserName.Text = dataGridView.CurrentRow.Cells[9].Value.ToString();
+            tb_Password.Text = dataGridView.CurrentRow.Cells[10].Value.ToString();
         }
 
         bool Verif()
@@ -442,19 +443,19 @@ namespace MultiFaceRec
             pb_PictureImage.Image = null;
             comboBox1.SelectedItem = null;
             dt_Birthday.Value = DateTime.Now;
-            dataGridView1.ClearSelection();
+            dataGridView.ClearSelection();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ////Thứ Tự các cột: id - fname - lname - bd - gdr - phn - adrs -roleid -gmail- username - passwod  pic
-            tb_EID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            tb_FirstName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            tb_LastName.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            dt_Birthday.Value = (DateTime)dataGridView1.CurrentRow.Cells[3].Value;
+            tb_EID.Text = dataGridView.CurrentRow.Cells[0].Value.ToString();
+            tb_FirstName.Text = dataGridView.CurrentRow.Cells[1].Value.ToString();
+            tb_LastName.Text = dataGridView.CurrentRow.Cells[2].Value.ToString();
+            dt_Birthday.Value = (DateTime)dataGridView.CurrentRow.Cells[3].Value;
 
             // Gender
-            if ((dataGridView1.CurrentRow.Cells[4].Value.ToString() == "Female") || (dataGridView1.CurrentRow.Cells[4].Value.ToString() == "female"))
+            if ((dataGridView.CurrentRow.Cells[4].Value.ToString() == "Female") || (dataGridView.CurrentRow.Cells[4].Value.ToString() == "female"))
             {
                 RadioButtonFemale.Checked = true;
                 RadioButtonMale.Checked = false;
@@ -465,16 +466,16 @@ namespace MultiFaceRec
                 RadioButtonFemale.Checked = false;
             }
 
-            tb_Phone.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            tb_Address.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            int c = Convert.ToInt32(dataGridView1.CurrentRow.Cells[8].Value.ToString());
+            tb_Phone.Text = dataGridView.CurrentRow.Cells[5].Value.ToString();
+            tb_Address.Text = dataGridView.CurrentRow.Cells[6].Value.ToString();
+            int c = Convert.ToInt32(dataGridView.CurrentRow.Cells[8].Value.ToString());
             comboBox1.SelectedIndex = c - 1;
-            tb_Email.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            tb_UserName.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            tb_Password.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            tb_Email.Text = dataGridView.CurrentRow.Cells[11].Value.ToString();
+            tb_UserName.Text = dataGridView.CurrentRow.Cells[9].Value.ToString();
+            tb_Password.Text = dataGridView.CurrentRow.Cells[10].Value.ToString();
 
             byte[] pic;
-            pic = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
+            pic = (byte[])dataGridView.CurrentRow.Cells[7].Value;
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(pic));
             pb_PictureImage.Image = x;
         }
@@ -496,6 +497,11 @@ namespace MultiFaceRec
             }
 
             return true;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

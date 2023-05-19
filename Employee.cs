@@ -125,7 +125,9 @@ namespace MultiFaceRec
         //Lấy danh sách tất cả nhân viên
         public DataTable GetAllEmployee()
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM Employee", mydb.getConnection);
+            SqlCommand command = new SqlCommand("SELECT EID as 'Employe ID', Fname as 'First Name', Lname as 'Last Name'," +
+                "Bdate as 'Birthday', Gender, Phone as 'Phone Number', Address, Pic as Picture, RoleID as 'Employee Role', username as 'User Name'" +
+                ", password as 'User Pass', gmail as 'Gmail' FROM Employee", mydb.getConnection);
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

@@ -1,6 +1,6 @@
 ﻿namespace MultiFaceRec
 {
-    partial class FormHRManagement
+    partial class lbl_Close
     {
         /// <summary>
         /// Required designer variable.
@@ -50,7 +50,7 @@
             this.bt_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Add = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Refresh = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.dt_Birthday = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.lb_Total = new System.Windows.Forms.Label();
@@ -80,13 +80,14 @@
             this.tb_EID = new Guna.UI2.WinForms.Guna2TextBox();
             this.pb_PictureImage = new System.Windows.Forms.PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lbl_Exit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PictureImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -363,21 +364,21 @@
             this.bt_Refresh.Text = "Refresh";
             this.bt_Refresh.Click += new System.EventHandler(this.bt_Refresh_Click);
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(487, 134);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 60;
-            this.dataGridView1.Size = new System.Drawing.Size(888, 388);
-            this.dataGridView1.TabIndex = 175;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(487, 134);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 60;
+            this.dataGridView.Size = new System.Drawing.Size(888, 388);
+            this.dataGridView.TabIndex = 175;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dt_Birthday
             // 
@@ -831,19 +832,32 @@
             this.guna2CirclePictureBox1.TabIndex = 147;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // FormHRManagement
+            // lbl_Exit
+            // 
+            this.lbl_Exit.AutoSize = true;
+            this.lbl_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Exit.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.lbl_Exit.Location = new System.Drawing.Point(1398, 9);
+            this.lbl_Exit.Name = "lbl_Exit";
+            this.lbl_Exit.Size = new System.Drawing.Size(34, 32);
+            this.lbl_Exit.TabIndex = 176;
+            this.lbl_Exit.Text = "X";
+            this.lbl_Exit.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lbl_Close
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1444, 753);
+            this.Controls.Add(this.lbl_Exit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.tb_Search);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.dt_Birthday);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lb_Total);
@@ -871,7 +885,8 @@
             this.Controls.Add(this.tb_LastName);
             this.Controls.Add(this.tb_FirstName);
             this.Controls.Add(this.tb_EID);
-            this.Name = "FormHRManagement";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "lbl_Close";
             this.Text = "FormHRManagement";
             this.Load += new System.EventHandler(this.FormHRManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hotelManagementDataSet)).EndInit();
@@ -880,7 +895,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_PictureImage)).EndInit();
@@ -913,7 +928,7 @@
         private Guna.UI2.WinForms.Guna2Button bt_Edit;
         private Guna.UI2.WinForms.Guna2Button bt_Add;
         private Guna.UI2.WinForms.Guna2Button bt_Refresh;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.DateTimePicker dt_Birthday;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lb_Total;
@@ -943,5 +958,6 @@
         private Guna.UI2.WinForms.Guna2TextBox tb_LastName;
         private Guna.UI2.WinForms.Guna2TextBox tb_FirstName;
         private Guna.UI2.WinForms.Guna2TextBox tb_EID;
+        private System.Windows.Forms.Label lbl_Exit;
     }
 }

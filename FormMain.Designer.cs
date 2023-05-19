@@ -30,7 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_ManageShift = new System.Windows.Forms.Button();
+            this.bt_HumanResource = new System.Windows.Forms.Button();
+            this.button_Main = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_Shift = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Checkout = new Guna.UI2.WinForms.Guna2Button();
@@ -38,21 +42,18 @@
             this.bt_Room = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Bill = new Guna.UI2.WinForms.Guna2Button();
             this.bt_Salary = new Guna.UI2.WinForms.Guna2Button();
+            this.CirclePictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lb_LogOut = new System.Windows.Forms.Label();
             this.lb_Edit = new System.Windows.Forms.Label();
             this.lb_FnameLname = new System.Windows.Forms.Label();
             this.lb_Welcome = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bt_Checkin = new Guna.UI2.WinForms.Guna2Button();
-            this.bt_ManageShift = new System.Windows.Forms.Button();
-            this.bt_HumanResource = new System.Windows.Forms.Button();
-            this.button_Main = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CirclePictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lbl_Exit = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_main.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CirclePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,55 @@
             this.panel1.Size = new System.Drawing.Size(169, 643);
             this.panel1.TabIndex = 4;
             // 
+            // bt_ManageShift
+            // 
+            this.bt_ManageShift.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.bt_ManageShift.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_ManageShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ManageShift.ForeColor = System.Drawing.Color.Blue;
+            this.bt_ManageShift.Image = ((System.Drawing.Image)(resources.GetObject("bt_ManageShift.Image")));
+            this.bt_ManageShift.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_ManageShift.Location = new System.Drawing.Point(0, 442);
+            this.bt_ManageShift.Name = "bt_ManageShift";
+            this.bt_ManageShift.Size = new System.Drawing.Size(169, 138);
+            this.bt_ManageShift.TabIndex = 57;
+            this.bt_ManageShift.Text = "Manage Shift";
+            this.bt_ManageShift.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bt_ManageShift.UseVisualStyleBackColor = false;
+            this.bt_ManageShift.Click += new System.EventHandler(this.bt_ManageShift_Click);
+            // 
+            // bt_HumanResource
+            // 
+            this.bt_HumanResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.bt_HumanResource.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_HumanResource.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_HumanResource.ForeColor = System.Drawing.Color.Blue;
+            this.bt_HumanResource.Image = ((System.Drawing.Image)(resources.GetObject("bt_HumanResource.Image")));
+            this.bt_HumanResource.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_HumanResource.Location = new System.Drawing.Point(0, 276);
+            this.bt_HumanResource.Name = "bt_HumanResource";
+            this.bt_HumanResource.Size = new System.Drawing.Size(169, 145);
+            this.bt_HumanResource.TabIndex = 56;
+            this.bt_HumanResource.Text = "Human Resource";
+            this.bt_HumanResource.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bt_HumanResource.UseVisualStyleBackColor = false;
+            this.bt_HumanResource.Click += new System.EventHandler(this.bt_HumanResource_Click);
+            // 
+            // button_Main
+            // 
+            this.button_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.button_Main.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Main.ForeColor = System.Drawing.Color.Blue;
+            this.button_Main.Image = ((System.Drawing.Image)(resources.GetObject("button_Main.Image")));
+            this.button_Main.Location = new System.Drawing.Point(0, 104);
+            this.button_Main.Name = "button_Main";
+            this.button_Main.Size = new System.Drawing.Size(169, 145);
+            this.button_Main.TabIndex = 2;
+            this.button_Main.Text = "Dashboard";
+            this.button_Main.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button_Main.UseVisualStyleBackColor = false;
+            // 
             // panel_main
             // 
             this.panel_main.Controls.Add(this.pictureBox1);
@@ -78,9 +128,21 @@
             this.panel_main.Size = new System.Drawing.Size(169, 98);
             this.panel_main.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::MultiFaceRec.Properties.Resources._7;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(169, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.lbl_Exit);
             this.panel2.Controls.Add(this.bt_Shift);
             this.panel2.Controls.Add(this.bt_Checkout);
             this.panel2.Controls.Add(this.bt_Stored);
@@ -202,6 +264,17 @@
             this.bt_Salary.Text = "SALARY";
             this.bt_Salary.Click += new System.EventHandler(this.bt_Salary_Click);
             // 
+            // CirclePictureBox
+            // 
+            this.CirclePictureBox.ImageRotate = 0F;
+            this.CirclePictureBox.Location = new System.Drawing.Point(940, 82);
+            this.CirclePictureBox.Name = "CirclePictureBox";
+            this.CirclePictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.CirclePictureBox.Size = new System.Drawing.Size(165, 120);
+            this.CirclePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CirclePictureBox.TabIndex = 38;
+            this.CirclePictureBox.TabStop = false;
+            // 
             // lb_LogOut
             // 
             this.lb_LogOut.AutoSize = true;
@@ -284,76 +357,17 @@
             this.bt_Checkin.Text = "Check In";
             this.bt_Checkin.Click += new System.EventHandler(this.bt_Checkin_Click);
             // 
-            // bt_ManageShift
+            // lbl_Exit
             // 
-            this.bt_ManageShift.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.bt_ManageShift.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_ManageShift.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ManageShift.ForeColor = System.Drawing.Color.Blue;
-            this.bt_ManageShift.Image = ((System.Drawing.Image)(resources.GetObject("bt_ManageShift.Image")));
-            this.bt_ManageShift.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_ManageShift.Location = new System.Drawing.Point(0, 442);
-            this.bt_ManageShift.Name = "bt_ManageShift";
-            this.bt_ManageShift.Size = new System.Drawing.Size(169, 138);
-            this.bt_ManageShift.TabIndex = 57;
-            this.bt_ManageShift.Text = "Manage Shift";
-            this.bt_ManageShift.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bt_ManageShift.UseVisualStyleBackColor = false;
-            this.bt_ManageShift.Click += new System.EventHandler(this.bt_ManageShift_Click);
-            // 
-            // bt_HumanResource
-            // 
-            this.bt_HumanResource.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.bt_HumanResource.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_HumanResource.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_HumanResource.ForeColor = System.Drawing.Color.Blue;
-            this.bt_HumanResource.Image = ((System.Drawing.Image)(resources.GetObject("bt_HumanResource.Image")));
-            this.bt_HumanResource.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_HumanResource.Location = new System.Drawing.Point(0, 276);
-            this.bt_HumanResource.Name = "bt_HumanResource";
-            this.bt_HumanResource.Size = new System.Drawing.Size(169, 145);
-            this.bt_HumanResource.TabIndex = 56;
-            this.bt_HumanResource.Text = "Human Resource";
-            this.bt_HumanResource.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bt_HumanResource.UseVisualStyleBackColor = false;
-            this.bt_HumanResource.Click += new System.EventHandler(this.bt_HumanResource_Click);
-            // 
-            // button_Main
-            // 
-            this.button_Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.button_Main.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Main.ForeColor = System.Drawing.Color.Blue;
-            this.button_Main.Image = ((System.Drawing.Image)(resources.GetObject("button_Main.Image")));
-            this.button_Main.Location = new System.Drawing.Point(0, 104);
-            this.button_Main.Name = "button_Main";
-            this.button_Main.Size = new System.Drawing.Size(169, 145);
-            this.button_Main.TabIndex = 2;
-            this.button_Main.Text = "Dashboard";
-            this.button_Main.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_Main.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::MultiFaceRec.Properties.Resources._7;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // CirclePictureBox
-            // 
-            this.CirclePictureBox.ImageRotate = 0F;
-            this.CirclePictureBox.Location = new System.Drawing.Point(940, 82);
-            this.CirclePictureBox.Name = "CirclePictureBox";
-            this.CirclePictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.CirclePictureBox.Size = new System.Drawing.Size(165, 120);
-            this.CirclePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CirclePictureBox.TabIndex = 38;
-            this.CirclePictureBox.TabStop = false;
+            this.lbl_Exit.AutoSize = true;
+            this.lbl_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Exit.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.lbl_Exit.Location = new System.Drawing.Point(1080, 9);
+            this.lbl_Exit.Name = "lbl_Exit";
+            this.lbl_Exit.Size = new System.Drawing.Size(34, 32);
+            this.lbl_Exit.TabIndex = 177;
+            this.lbl_Exit.Text = "X";
+            this.lbl_Exit.Click += new System.EventHandler(this.lbl_Exit_Click_1);
             // 
             // FormMain
             // 
@@ -362,14 +376,16 @@
             this.ClientSize = new System.Drawing.Size(1126, 643);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel_main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CirclePictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -397,5 +413,6 @@
         private System.Windows.Forms.Label lb_Welcome;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button bt_Checkin;
+        private System.Windows.Forms.Label lbl_Exit;
     }
 }

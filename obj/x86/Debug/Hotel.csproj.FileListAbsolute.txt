@@ -186,7 +186,6 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.EditEmployeeForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.EditRoomForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.EShiftForm.resources
-C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.FormHRManagement.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.HRForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.LoginForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.MainForm.resources
@@ -199,3 +198,4 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.exe
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.pdb
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.FormMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\FinalProject\Winform_final\obj\x86\Debug\MultiFaceRec.lbl_Close.resources

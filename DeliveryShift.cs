@@ -364,7 +364,7 @@ namespace MultiFaceRec
                         shift[i] = "Off";
                 }
             }
-            command.Parameters.Add("@Id", SqlDbType.Int).Value = Convert.ToInt32(shift[0]);
+            //command.Parameters.Add("@Id", SqlDbType.Int).Value = Convert.ToInt32(shift[0]);
             //command.Parameters.Add("@position", SqlDbType.NVarChar).Value = shift[1];
             //command.Parameters.Add("@monday", SqlDbType.NVarChar).Value = shift[2];
             //command.Parameters.Add("@tuesday", SqlDbType.NVarChar).Value = shift[3];
