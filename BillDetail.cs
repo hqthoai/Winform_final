@@ -16,5 +16,10 @@ namespace MultiFaceRec
         {
             InitializeComponent();
         }
+
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

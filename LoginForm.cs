@@ -75,7 +75,7 @@ namespace MultiFaceRec
                     MessageBox.Show("Welcome Manager!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Hide();
 
-                    MainForm form = new MainForm();
+                    FormMain form = new FormMain();
                     form.Show(this);
 
                     //Gán biến form cho fromHR để gọi ngược lại loginform khi sign out
@@ -125,7 +125,7 @@ namespace MultiFaceRec
 
                     Hide();
 
-                    MainForm form = new MainForm();
+                    FormMain form = new FormMain();
                     form.Show(this);
 
                     //Gán biến form cho fromHR để gọi ngược lại loginform khi sign out
@@ -176,7 +176,7 @@ namespace MultiFaceRec
 
                     Hide();
 
-                    MainForm form = new MainForm();
+                    FormMain form = new FormMain();
                     form.Show(this);
 
                     //Gán biến form cho fromHR để gọi ngược lại loginform khi sign out

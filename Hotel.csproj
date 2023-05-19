@@ -134,6 +134,18 @@
     <Compile Include="EShiftForm.Designer.cs">
       <DependentUpon>EShiftForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHRManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHRManagement.Designer.cs">
+      <DependentUpon>FormHRManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="hotelManagementDataSet.cs">
       <DependentUpon>hotelManagementDataSet.xsd</DependentUpon>
@@ -203,6 +215,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EShiftForm.resx">
       <DependentUpon>EShiftForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHRManagement.resx">
+      <DependentUpon>FormHRManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HRForm.resx">
       <DependentUpon>HRForm.cs</DependentUpon>

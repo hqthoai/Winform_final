@@ -269,12 +269,12 @@ namespace MultiFaceRec
             this.bt_CheckOut6.Enabled = false;
             this.bt_CheckOut6.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut6.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut6.Location = new System.Drawing.Point(184, 341);
+            this.bt_CheckOut6.Location = new System.Drawing.Point(166, 342);
             this.bt_CheckOut6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut6.Name = "bt_CheckOut6";
-            this.bt_CheckOut6.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut6.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut6.TabIndex = 10;
-            this.bt_CheckOut6.Text = "C/O";
+            this.bt_CheckOut6.Text = "Check Out";
             this.bt_CheckOut6.UseVisualStyleBackColor = false;
             this.bt_CheckOut6.Click += new System.EventHandler(this.bt_CheckOut6_Click);
             // 
@@ -283,7 +283,7 @@ namespace MultiFaceRec
             this.bt_BookRoom6.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom6.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom6.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom6.Location = new System.Drawing.Point(32, 342);
+            this.bt_BookRoom6.Location = new System.Drawing.Point(15, 341);
             this.bt_BookRoom6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom6.Name = "bt_BookRoom6";
             this.bt_BookRoom6.Size = new System.Drawing.Size(113, 36);
@@ -478,12 +478,12 @@ namespace MultiFaceRec
             this.bt_CheckOut5.Enabled = false;
             this.bt_CheckOut5.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut5.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut5.Location = new System.Drawing.Point(177, 341);
+            this.bt_CheckOut5.Location = new System.Drawing.Point(170, 342);
             this.bt_CheckOut5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut5.Name = "bt_CheckOut5";
-            this.bt_CheckOut5.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut5.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut5.TabIndex = 10;
-            this.bt_CheckOut5.Text = "C/O";
+            this.bt_CheckOut5.Text = "Check Out";
             this.bt_CheckOut5.UseVisualStyleBackColor = false;
             this.bt_CheckOut5.Click += new System.EventHandler(this.bt_CheckOut5_Click);
             // 
@@ -492,7 +492,7 @@ namespace MultiFaceRec
             this.bt_BookRoom5.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom5.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom5.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom5.Location = new System.Drawing.Point(32, 342);
+            this.bt_BookRoom5.Location = new System.Drawing.Point(12, 341);
             this.bt_BookRoom5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom5.Name = "bt_BookRoom5";
             this.bt_BookRoom5.Size = new System.Drawing.Size(112, 36);
@@ -687,12 +687,12 @@ namespace MultiFaceRec
             this.bt_CheckOut4.Enabled = false;
             this.bt_CheckOut4.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut4.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut4.Location = new System.Drawing.Point(183, 341);
+            this.bt_CheckOut4.Location = new System.Drawing.Point(163, 342);
             this.bt_CheckOut4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut4.Name = "bt_CheckOut4";
-            this.bt_CheckOut4.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut4.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut4.TabIndex = 10;
-            this.bt_CheckOut4.Text = "C/O";
+            this.bt_CheckOut4.Text = "Check Out";
             this.bt_CheckOut4.UseVisualStyleBackColor = false;
             this.bt_CheckOut4.Click += new System.EventHandler(this.bt_CheckOut4_Click);
             // 
@@ -701,7 +701,7 @@ namespace MultiFaceRec
             this.bt_BookRoom4.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom4.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom4.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom4.Location = new System.Drawing.Point(28, 342);
+            this.bt_BookRoom4.Location = new System.Drawing.Point(12, 341);
             this.bt_BookRoom4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom4.Name = "bt_BookRoom4";
             this.bt_BookRoom4.Size = new System.Drawing.Size(112, 36);
@@ -896,12 +896,12 @@ namespace MultiFaceRec
             this.bt_CheckOut3.Enabled = false;
             this.bt_CheckOut3.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut3.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut3.Location = new System.Drawing.Point(184, 341);
+            this.bt_CheckOut3.Location = new System.Drawing.Point(166, 341);
             this.bt_CheckOut3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut3.Name = "bt_CheckOut3";
-            this.bt_CheckOut3.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut3.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut3.TabIndex = 10;
-            this.bt_CheckOut3.Text = "C/O";
+            this.bt_CheckOut3.Text = "Check Out";
             this.bt_CheckOut3.UseVisualStyleBackColor = false;
             this.bt_CheckOut3.Click += new System.EventHandler(this.bt_CheckOut3_Click);
             // 
@@ -910,7 +910,7 @@ namespace MultiFaceRec
             this.bt_BookRoom3.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom3.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom3.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom3.Location = new System.Drawing.Point(32, 341);
+            this.bt_BookRoom3.Location = new System.Drawing.Point(5, 341);
             this.bt_BookRoom3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom3.Name = "bt_BookRoom3";
             this.bt_BookRoom3.Size = new System.Drawing.Size(123, 36);
@@ -1105,12 +1105,12 @@ namespace MultiFaceRec
             this.bt_CheckOut2.Enabled = false;
             this.bt_CheckOut2.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut2.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut2.Location = new System.Drawing.Point(173, 341);
+            this.bt_CheckOut2.Location = new System.Drawing.Point(170, 341);
             this.bt_CheckOut2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut2.Name = "bt_CheckOut2";
-            this.bt_CheckOut2.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut2.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut2.TabIndex = 10;
-            this.bt_CheckOut2.Text = "C/O";
+            this.bt_CheckOut2.Text = "Check Out";
             this.bt_CheckOut2.UseVisualStyleBackColor = false;
             this.bt_CheckOut2.Click += new System.EventHandler(this.bt_CheckOut2_Click);
             // 
@@ -1119,7 +1119,7 @@ namespace MultiFaceRec
             this.bt_BookRoom2.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom2.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom2.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom2.Location = new System.Drawing.Point(28, 341);
+            this.bt_BookRoom2.Location = new System.Drawing.Point(9, 341);
             this.bt_BookRoom2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom2.Name = "bt_BookRoom2";
             this.bt_BookRoom2.Size = new System.Drawing.Size(112, 36);
@@ -1279,7 +1279,7 @@ namespace MultiFaceRec
             this.bt_BookRoom1.BackColor = System.Drawing.Color.LightBlue;
             this.bt_BookRoom1.FlatAppearance.BorderSize = 0;
             this.bt_BookRoom1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_BookRoom1.Location = new System.Drawing.Point(33, 341);
+            this.bt_BookRoom1.Location = new System.Drawing.Point(12, 341);
             this.bt_BookRoom1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_BookRoom1.Name = "bt_BookRoom1";
             this.bt_BookRoom1.Size = new System.Drawing.Size(112, 36);
@@ -1294,12 +1294,12 @@ namespace MultiFaceRec
             this.bt_CheckOut1.Enabled = false;
             this.bt_CheckOut1.FlatAppearance.BorderSize = 0;
             this.bt_CheckOut1.Font = new System.Drawing.Font("Palatino Linotype", 13.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CheckOut1.Location = new System.Drawing.Point(188, 341);
+            this.bt_CheckOut1.Location = new System.Drawing.Point(163, 341);
             this.bt_CheckOut1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_CheckOut1.Name = "bt_CheckOut1";
-            this.bt_CheckOut1.Size = new System.Drawing.Size(112, 36);
+            this.bt_CheckOut1.Size = new System.Drawing.Size(153, 36);
             this.bt_CheckOut1.TabIndex = 10;
-            this.bt_CheckOut1.Text = "C/O";
+            this.bt_CheckOut1.Text = "Check Out";
             this.bt_CheckOut1.UseVisualStyleBackColor = false;
             this.bt_CheckOut1.Click += new System.EventHandler(this.bt_CheckOut1_Click);
             // 

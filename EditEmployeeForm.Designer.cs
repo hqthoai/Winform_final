@@ -78,6 +78,7 @@ namespace MultiFaceRec
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(200, 30);
             this.tb_Phone.TabIndex = 84;
+            this.tb_Phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Phone_KeyPress);
             // 
             // tb_Email
             // 

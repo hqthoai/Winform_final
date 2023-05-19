@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace MultiFaceRec
@@ -48,16 +49,16 @@ namespace MultiFaceRec
                 tb_Name.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 
                 // Check if the cell value is null before accessing its property
-                if (dataGridView1.CurrentRow.Cells[3].Value != null)
+                if (dataGridView1.CurrentRow.Cells[2].Value != null)
                 {
                     CultureInfo culture = new CultureInfo("vi-VN");
-                    tb_Price.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                    tb_Price.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 }
 
                 // Check if the cell value is null before trying to convert it to an integer
-                if (dataGridView1.CurrentRow.Cells[2].Value != null)
+                if (dataGridView1.CurrentRow.Cells[3].Value != null)
                 {
-                    string quantityString = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    string quantityString = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                     int quantity = 0;
                     bool isNumeric = int.TryParse(quantityString, out quantity);
                     if (isNumeric)
@@ -66,6 +67,37 @@ namespace MultiFaceRec
                     }
                 }
             }
+        }
+
+        
+        bool Verif()
+        {
+            if ((tb_PID.Text.Trim() == "")
+                || (tb_Name.Text.Trim() == "")
+                || (tb_Price.Text.Trim() == ""))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        void CleanFields()
+        {
+            tb_PID.Text = "";
+            tb_Name.Text = "";
+            tb_Price.Text = "";
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void bt_Add_Click(object sender, EventArgs e)
@@ -189,34 +221,41 @@ namespace MultiFaceRec
         {
             CleanFields();
         }
-        bool Verif()
+
+        private void tb_PID_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((tb_PID.Text.Trim() == "")
-                || (tb_Name.Text.Trim() == "")
-                || (tb_Price.Text.Trim() == ""))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                return false;
-            }
-            else
-            {
-                return true;
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Bookng Form", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        void CleanFields()
+
+        private void tb_Price_KeyPress(object sender, KeyPressEventArgs e)
         {
-            tb_PID.Text = "";
-            tb_Name.Text = "";
-            tb_Price.Text = "";
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Bookng Form", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void tb_Name_TextChanged(object sender, EventArgs e)
         {
+            // Define regular expression pattern
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
 
-        }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
+            // Check if input matches pattern
+            if (!Regex.IsMatch(tb_Name.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Không được nhập số", "" +
+                    "Human Resource",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                tb_Name.Text = ""; // Clear the textbox
+            }
         }
     }
 }
