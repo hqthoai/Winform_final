@@ -5,7 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace MultiFaceRec
@@ -288,6 +290,73 @@ namespace MultiFaceRec
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Booking Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txb_Phone_TextChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra xem người dùng đã nhập ký tự chữ vào ô TextBox hay chưa
+            foreach (char c in txb_Phone.Text)
+            {
+                if (char.IsLetter(c))
+                {
+                    // Nếu người dùng đã nhập ký tự chữ, hiển thị một thông báo cảnh báo
+                    MessageBox.Show("Only number", "Booking", MessageBoxButtons.OK, MessageBoxIcon.Warning);                    // Xóa ký tự chữ vừa nhập vào ô TextBox
+                    txb_Phone.Text = txb_Phone.Text.Remove(txb_Phone.Text.Length - 1);
+                    // Di chuyển con trỏ về cuối ô TextBox
+                    txb_Phone.SelectionStart = txb_Phone.Text.Length;
+                    return;
+                }
+            }
+           
+        }
+
+        private void txb_pupli_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txb_Phone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txb_Price_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txb_pupli_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void txb_GuestName_TextChanged(object sender, EventArgs e)
+        {
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(txb_GuestName.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Không được nhập số", "" +
+                    "Human Resource",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                txb_GuestName.Text = ""; // Clear the textbox
             }
         }
     }

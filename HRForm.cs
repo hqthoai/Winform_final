@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace MultiFaceRec
@@ -72,6 +73,11 @@ namespace MultiFaceRec
                     {
                         MessageBox.Show("The Employee Age Must Be Between 18 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    else if (!CheckEmail(tb_Email.Text))
+                    {
+                        MessageBox.Show("Hãy Nhập Đúng Định Dạng Của Gmail", "HR",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                     else
                     {
                         if (employee.CheckEID(EID))
@@ -137,12 +143,16 @@ namespace MultiFaceRec
                     }
                     int born_year = dt_Birthday.Value.Year;
                     int this_year = DateTime.Now.Year;
-
-                    // student form 10-100, may change
                     if (((this_year - born_year) < 18) || ((this_year - born_year) > 100))
                     {
                         MessageBox.Show("The Employee Age Must Be Between 18 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    else if (!CheckEmail(tb_Email.Text))
+                    {
+                        MessageBox.Show("Hãy Nhập Đúng Định Dạng Của Gmail", "HR",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
                     else
                     {
                         if (employee.Update(EID, fname, lname, bdate, gender, phone, email, adrs, RoleID, pic, username, password))
@@ -388,5 +398,79 @@ namespace MultiFaceRec
             lb_Total.Text = ("Total: " + totale);
         }
 
+        private void tb_EID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void tb_Phone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Chỉ được nhập Số!", "Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void tb_FirstName_TextChanged(object sender, EventArgs e)
+        {
+            // Define regular expression pattern
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(tb_FirstName.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Không được nhập số", "" +
+                    "Human Resource",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                tb_FirstName.Text = ""; // Clear the textbox
+            }
+        }
+
+        private void tb_LastName_TextChanged(object sender, EventArgs e)
+        {
+            // Define regular expression pattern
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(tb_LastName.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Không được nhập số", "" +
+                    "Human Resource",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                tb_LastName.Text = ""; // Clear the textbox
+            }
+        }
+        // hàm kiểm tra nhập gmail
+        private bool CheckEmail(string email)
+        {
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                Regex regex = new Regex(@"^[a-zA-Z0-9._%+-]+@gmail\.com$");
+                if (!regex.IsMatch(email))
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+
+            return true;
+        }
+
     }
+
+
 }

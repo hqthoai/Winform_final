@@ -89,6 +89,7 @@ namespace MultiFaceRec
             this.txb_pupli.Name = "txb_pupli";
             this.txb_pupli.Size = new System.Drawing.Size(169, 27);
             this.txb_pupli.TabIndex = 162;
+            this.txb_pupli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_pupli_KeyPress);
             // 
             // label2
             // 
@@ -134,6 +135,7 @@ namespace MultiFaceRec
             this.txb_Phone.Name = "txb_Phone";
             this.txb_Phone.Size = new System.Drawing.Size(169, 27);
             this.txb_Phone.TabIndex = 156;
+            this.txb_Phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Phone_KeyPress);
             // 
             // label3
             // 
@@ -166,6 +168,7 @@ namespace MultiFaceRec
             this.txb_GuestName.Name = "txb_GuestName";
             this.txb_GuestName.Size = new System.Drawing.Size(149, 27);
             this.txb_GuestName.TabIndex = 153;
+            this.txb_GuestName.TextChanged += new System.EventHandler(this.txb_GuestName_TextChanged);
             // 
             // lb_total
             // 
@@ -210,6 +213,7 @@ namespace MultiFaceRec
             this.txb_Price.Name = "txb_Price";
             this.txb_Price.Size = new System.Drawing.Size(149, 27);
             this.txb_Price.TabIndex = 149;
+            this.txb_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_Price_KeyPress);
             // 
             // txb_Days
             // 

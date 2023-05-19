@@ -24,7 +24,7 @@ namespace MultiFaceRec
 
         public DataTable GetAllBill()
         {
-            SqlCommand command = new SqlCommand("SELECT Room.Type as TypeofRoom, Gname as CusNam, Phone as PhoneNum, Arrival as ArrvialDate," +
+            SqlCommand command = new SqlCommand("SELECT Bill.RID as RoomID, Room.Type as TypeofRoom, Gname as CusNam, Phone as PhoneNum, Arrival as ArrvialDate," +
                 " Leave as LeaveDate,RPrice as RoomPrice, SPrice as SerPrice, TotalPrice as Total " +
                 "FROM Bill join Room on Room.RID = Bill.RID", mydb.getConnection);
             mydb.openConnection();
@@ -37,6 +37,17 @@ namespace MultiFaceRec
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Bill WHERE RID = @rid ", mydb.getConnection);
             command.Parameters.Add("@rid", SqlDbType.Int).Value = RoomID;
+            mydb.openConnection();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+        public DataTable GetBillToday()
+        {
+            SqlCommand command = new SqlCommand("SELECT SUM(TotalPrice) as 'Today Income'FROM Bill WHERE Arrival = @arr and Leave = @lea ", mydb.getConnection);
+            command.Parameters.Add("@arr", SqlDbType.Date).Value = DateTime.Now.Date;
+            command.Parameters.Add("@lea", SqlDbType.Date).Value = DateTime.Now.Date;
             mydb.openConnection();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable table = new DataTable();

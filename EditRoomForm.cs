@@ -58,11 +58,11 @@ namespace MultiFaceRec
                     }
                     #endregion
                 }
-                else                                //nếu chwua book => cho book ko cho check out
-                {
-                    bt_CheckOut1.Enabled = false;
-                    bt_BookRoom1.Enabled = true;
-                }
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut1.Enabled = false;
+                //    bt_BookRoom1.Enabled = true;
+                //}
             }
             #endregion
             #region Room 2
@@ -70,11 +70,8 @@ namespace MultiFaceRec
             table = book.GetBookingByID(2);
             if (table.Rows.Count > 0)
             {
-
-
                 if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
                 {
-
                     #region Load Room1
                     lb_Guest2.Text = table.Rows[0][1].ToString();
                     lb_Phone2.Text = table.Rows[0][2].ToString();
@@ -99,52 +96,52 @@ namespace MultiFaceRec
 
                     #endregion
                 }
-                else                                //nếu chwua book => cho book ko cho check out
-                {
-                    bt_CheckOut2.Enabled = false;
-                    bt_BookRoom2.Enabled = true;
-                }
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut2.Enabled = false;
+                //    bt_BookRoom2.Enabled = true;
+                //}
             }
             #endregion
             #region Room 3
             table = book.GetBookingByID(3);
-                        if (table.Rows.Count > 0)
+            if (table.Rows.Count > 0)
             {
-
-            if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
-            {
-                #region Load Room1
-                lb_Guest3.Text = table.Rows[0][1].ToString();
-                lb_Phone3.Text = table.Rows[0][2].ToString();
-                lb_pupil3.Text = table.Rows[0][3].ToString();
-                DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
-                lb_Arrival3.Text = arrive.ToString("dd/MM/yyyy");
-                DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
-                lb_Leave3.Text = leave.ToString("dd/MM/yyyy");
-                lb_Status3.ForeColor = Color.Red;
-                lb_Status3.Text = "Occupied";
-                bt_BookRoom3.Enabled = false;
-                bt_CheckOut3.Enabled = true;
-                #endregion
-                #region kiểm tra đã tới ngày checkout hay chưa
-                DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
-                DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
-                int day = (now - Leave1).Days;
-                if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
+                if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
                 {
-                    bt_CheckOut3.Enabled = true;
-                }
-                else
-                {
+                    #region Load Room1
+                    lb_Guest3.Text = table.Rows[0][1].ToString();
+                    lb_Phone3.Text = table.Rows[0][2].ToString();
+                    lb_pupil3.Text = table.Rows[0][3].ToString();
+                    DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
+                    lb_Arrival3.Text = arrive.ToString("dd/MM/yyyy");
+                    DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
+                    lb_Leave3.Text = leave.ToString("dd/MM/yyyy");
+                    lb_Status3.ForeColor = Color.Red;
+                    lb_Status3.Text = "Occupied";
                     bt_BookRoom3.Enabled = false;
+                    bt_CheckOut3.Enabled = true;
+                    #endregion
+                    #region kiểm tra đã tới ngày checkout hay chưa
+                    DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
+                    DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
+                    int day = (now - Leave1).Days;
+                    if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
+                    {
+                        bt_CheckOut3.Enabled = true;
+                    }
+                    else
+                    {
+                        bt_BookRoom3.Enabled = false;
+                    }
+                    #endregion
                 }
-                #endregion
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut3.Enabled = false;
+                //    bt_BookRoom3.Enabled = true;
+                //}
             }
-            else                                //nếu chwua book => cho book ko cho check out
-            {
-                bt_CheckOut3.Enabled = false;
-                bt_BookRoom3.Enabled = true;
-            } }
             #endregion
             #region Room 4
             table = book.GetBookingByID(4);
@@ -152,81 +149,83 @@ namespace MultiFaceRec
             {
 
                 if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
-            {
-                #region Load Room1
-                lb_Guest4.Text = table.Rows[0][1].ToString();
-                lb_Phone4.Text = table.Rows[0][2].ToString();
-                lb_pupil4.Text = table.Rows[0][3].ToString();
-                DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
-                lb_Arrival4.Text = arrive.ToString("dd/MM/yyyy");
-                DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
-                lb_Leave4.Text = leave.ToString("dd/MM/yyyy");
-                lb_Status4.ForeColor = Color.Red;
-                lb_Status4.Text = "Occupied";
-                bt_BookRoom4.Enabled = false;
-                bt_CheckOut4.Enabled = true;
-                #endregion
-                #region kiểm tra đã tới ngày checkout hay chưa
-                DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
-                DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
-                int day = (now - Leave1).Days;
-                if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
                 {
-                    bt_CheckOut4.Enabled = true;
-                }
-                else
-                {
+                    #region Load Room1
+                    lb_Guest4.Text = table.Rows[0][1].ToString();
+                    lb_Phone4.Text = table.Rows[0][2].ToString();
+                    lb_pupil4.Text = table.Rows[0][3].ToString();
+                    DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
+                    lb_Arrival4.Text = arrive.ToString("dd/MM/yyyy");
+                    DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
+                    lb_Leave4.Text = leave.ToString("dd/MM/yyyy");
+                    lb_Status4.ForeColor = Color.Red;
+                    lb_Status4.Text = "Occupied";
                     bt_BookRoom4.Enabled = false;
+                    bt_CheckOut4.Enabled = true;
+                    #endregion
+                    #region kiểm tra đã tới ngày checkout hay chưa
+                    DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
+                    DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
+                    int day = (now - Leave1).Days;
+                    if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
+                    {
+                        bt_CheckOut4.Enabled = true;
+                    }
+                    else
+                    {
+                        bt_BookRoom4.Enabled = false;
+                    }
+                    #endregion
                 }
-                #endregion
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut4.Enabled = false;
+                //    bt_BookRoom4.Enabled = true;
+                //} 
             }
-            else                                //nếu chwua book => cho book ko cho check out
-            {
-                bt_CheckOut4.Enabled = false;
-                bt_BookRoom4.Enabled = true;
-            } 
-        }
             #endregion
             #region Room 5
+            table = book.GetBookingByID(5);
+
             if (table.Rows.Count > 0)
             {
 
-                table = book.GetBookingByID(5);
-            if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
-            {
-                #region Load Room1
-                lb_Guest5.Text = table.Rows[0][1].ToString();
-                lb_Phone5.Text = table.Rows[0][2].ToString();
-                lb_pupil5.Text = table.Rows[0][3].ToString();
-                DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
-                lb_Arrival5.Text = arrive.ToString("dd/MM/yyyy");
-                DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
-                lb_Leave5.Text = leave.ToString("dd/MM/yyyy");
-                lb_Status5.ForeColor = Color.Red;
-                lb_Status5.Text = "Occupied";
-                bt_BookRoom5.Enabled = false;
-                bt_CheckOut5.Enabled = true;
-                #endregion
-                #region kiểm tra đã tới ngày checkout hay chưa
-                DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
-                DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
-                int day = (now - Leave1).Days;
-                if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
+
+                if (Convert.ToInt32(table.Rows[0][7].ToString()) == 1)                 //nếu đã book
                 {
-                    bt_CheckOut5.Enabled = true;
-                }
-                else
-                {
+                    #region Load Room1
+                    lb_Guest5.Text = table.Rows[0][1].ToString();
+                    lb_Phone5.Text = table.Rows[0][2].ToString();
+                    lb_pupil5.Text = table.Rows[0][3].ToString();
+                    DateTime arrive = DateTime.Parse(table.Rows[0][4].ToString());
+                    lb_Arrival5.Text = arrive.ToString("dd/MM/yyyy");
+                    DateTime leave = DateTime.Parse(table.Rows[0][5].ToString());
+                    lb_Leave5.Text = leave.ToString("dd/MM/yyyy");
+                    lb_Status5.ForeColor = Color.Red;
+                    lb_Status5.Text = "Occupied";
                     bt_BookRoom5.Enabled = false;
+                    bt_CheckOut5.Enabled = true;
+                    #endregion
+                    #region kiểm tra đã tới ngày checkout hay chưa
+                    DateTime Leave1 = DateTime.Parse(table.Rows[0][5].ToString());  //lấy ngày checkout
+                    DateTime now = DateTime.Today;                                  //lấy ngày today dự theo thời gian của máy tính (có thể thay đổi)
+                    int day = (now - Leave1).Days;
+                    if (day >= 0)                                   //đến ngày trả phòng thì cho check out và cho book, nếu chưa thì ko cho book 
+                    {
+                        bt_CheckOut5.Enabled = true;
+                    }
+                    else
+                    {
+                        bt_BookRoom5.Enabled = false;
+                    }
+                    #endregion
                 }
-                #endregion
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut5.Enabled = false;
+                //    bt_BookRoom5.Enabled = true;
+                //}
             }
-            else                                //nếu chwua book => cho book ko cho check out
-            {
-                bt_CheckOut5.Enabled = false;
-                bt_BookRoom5.Enabled = true;
-            }
-        }
             #endregion
             #region Room 6
             table = book.GetBookingByID(6);
@@ -263,11 +262,11 @@ namespace MultiFaceRec
                     }
                     #endregion
                 }
-                else                                //nếu chwua book => cho book ko cho check out
-                {
-                    bt_CheckOut6.Enabled = false;
-                    bt_BookRoom6.Enabled = true;
-                }
+                //else                                //nếu chwua book => cho book ko cho check out
+                //{
+                //    bt_CheckOut6.Enabled = false;
+                //    bt_BookRoom6.Enabled = true;
+                //}
             }
             #endregion
         }
@@ -330,7 +329,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID); 
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(),Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse( dt.Rows[0][4].ToString()), DateTime.Parse( dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(),Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse( dt.Rows[0][4].ToString()), DateTime.Parse( dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 
 
@@ -393,7 +392,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID);
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
@@ -452,7 +451,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID);
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
@@ -511,7 +510,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID);
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
@@ -570,7 +569,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID);
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;
@@ -629,7 +628,7 @@ namespace MultiFaceRec
                 DataTable dt = book.GetBookingByID(roomID);
                 if (dt.Rows.Count > 0)
                 {
-                    bill.insert(1, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
+                    bill.insert(roomID, dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), Int32.Parse(dt.Rows[0][3].ToString()), DateTime.Parse(dt.Rows[0][4].ToString()), DateTime.Parse(dt.Rows[0][5].ToString()), Int32.Parse(dt.Rows[0][6].ToString()), Int32.Parse(dt.Rows[0][8].ToString()));
                 }
                 DateTime arrive = DateTime.Today.Date;
                 DateTime leave = DateTime.Today.Date;

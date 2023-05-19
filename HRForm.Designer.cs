@@ -424,6 +424,7 @@ namespace MultiFaceRec
             this.tb_EID.Name = "tb_EID";
             this.tb_EID.Size = new System.Drawing.Size(200, 22);
             this.tb_EID.TabIndex = 0;
+            this.tb_EID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_EID_KeyPress);
             // 
             // lb_Email
             // 
@@ -534,6 +535,7 @@ namespace MultiFaceRec
             this.tb_Phone.Name = "tb_Phone";
             this.tb_Phone.Size = new System.Drawing.Size(207, 22);
             this.tb_Phone.TabIndex = 4;
+            this.tb_Phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Phone_KeyPress);
             // 
             // dt_Birthday
             // 
@@ -563,6 +565,7 @@ namespace MultiFaceRec
             this.tb_LastName.Name = "tb_LastName";
             this.tb_LastName.Size = new System.Drawing.Size(200, 22);
             this.tb_LastName.TabIndex = 2;
+            this.tb_LastName.TextChanged += new System.EventHandler(this.tb_LastName_TextChanged);
             // 
             // tb_FirstName
             // 
@@ -572,6 +575,7 @@ namespace MultiFaceRec
             this.tb_FirstName.Name = "tb_FirstName";
             this.tb_FirstName.Size = new System.Drawing.Size(200, 22);
             this.tb_FirstName.TabIndex = 1;
+            this.tb_FirstName.TextChanged += new System.EventHandler(this.tb_FirstName_TextChanged);
             // 
             // lb_Picture
             // 

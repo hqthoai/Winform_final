@@ -192,7 +192,7 @@ namespace MultiFaceRec
             // 
             this.bt_HumanResource.BackColor = System.Drawing.Color.LawnGreen;
             this.bt_HumanResource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_HumanResource.Location = new System.Drawing.Point(223, 685);
+            this.bt_HumanResource.Location = new System.Drawing.Point(172, 685);
             this.bt_HumanResource.Margin = new System.Windows.Forms.Padding(4);
             this.bt_HumanResource.Name = "bt_HumanResource";
             this.bt_HumanResource.Size = new System.Drawing.Size(155, 54);
@@ -205,7 +205,7 @@ namespace MultiFaceRec
             // 
             this.bt_Salary.BackColor = System.Drawing.Color.SeaGreen;
             this.bt_Salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Salary.Location = new System.Drawing.Point(506, 685);
+            this.bt_Salary.Location = new System.Drawing.Point(451, 685);
             this.bt_Salary.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Salary.Name = "bt_Salary";
             this.bt_Salary.Size = new System.Drawing.Size(155, 54);
@@ -217,7 +217,7 @@ namespace MultiFaceRec
             // 
             this.bt_Stored.BackColor = System.Drawing.Color.Green;
             this.bt_Stored.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Stored.Location = new System.Drawing.Point(780, 696);
+            this.bt_Stored.Location = new System.Drawing.Point(794, 685);
             this.bt_Stored.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Stored.Name = "bt_Stored";
             this.bt_Stored.Size = new System.Drawing.Size(155, 54);
